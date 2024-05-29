@@ -1,0 +1,21 @@
+\documentclass[VAR:FONTSIZE,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[autocompile]{gregoriotex}
+\gresetgregoriofont{VAR:FONT}
+\grechangestaffsize{VAR:STAFFSIZE}
+\newfontfamily\initfamily{VAR:INITFONT}\def\greinitialformat#1{{\fontsize{32}{12}\selectfont\initfamily #1}}
+\newfontfamily\choralsignfont{VAR:CSFONT}%
+    \def\grehighchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}%
+    \def\grelowchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}
+\setmainfont[Ligatures={Common,TeX},Numbers=OldStyle]{VAR:SERIFFONT}
+\setsansfont[Ligatures={Common,TeX},Numbers=OldStyle]{VAR:SANSFONT}
+\setmonofont[Ligatures={TeX}]{Courier New}
+\begin{document}
+\begin{center}
+ {\huge\sffamily\bfseries VAR:NAME}
+\end{center}
+\grecommentary{VAR:COMMENTARY}
+\gregorioscore{VAR:FILENAME}
+User Notes:\par 
+VAR:USERNOTES
+\end{document}

@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[de_DE]=/usr/local/share/notatioantiqua/images/notantiq-icon.png
+Name[de_DE]=Notatio Antiqua
+Exec=/usr/bin/notatioantiqua
+Comment[de_DE]=Notatio Antiqua öffnen
+Name=Notatio Antiqua
+Comment=Open Notatio Antiqua
+Icon=/usr/local/share/notatioantiqua/images/notantiq-icon.png

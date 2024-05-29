@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>NaProg-de.qm</file>
+        <file>NaProg-en.qm</file>
+        <file>NaProg-fr.qm</file>
+    </qresource>
+</RCC>

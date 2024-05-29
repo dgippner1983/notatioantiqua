@@ -1,0 +1,27 @@
+\pdfprotrudechars2
+\pdfadjustspacing2
+\pdfminorversion=7
+\pdfcompresslevel=9
+\pdfobjcompresslevel=3
+\documentclass[initial=VAR:INITFONT,staff=VAR:STAFFSIZE,font=VAR:FONT,VAR:FONTSIZE,a4paper,openany,twoside,choralsign=VAR:CSFONT]{gregorian}
+\setmainfont[Ligatures={Common,TeX},Numbers=OldStyle]{VAR:SERIFFONT}
+\setsansfont[Ligatures={Common,TeX},Numbers=OldStyle]{VAR:SANSFONT}
+\sloppy
+\usepackage[a4paper,top=2cm,bottom=2cm,inner=2cm,outer=2cm]{geometry}
+\pagestyle{myheadings}
+\makefootrule{myheadings}{\textwidth}{0.4pt}{\footruleskip}
+\makeheadrule{myheadings}{\textwidth}{0pt}
+\makeevenfoot{myheadings}{\thepage}{}{}
+\makeoddfoot{myheadings}{}{}{\thepage}
+\makeevenhead{myheadings}{\rightmark}{}{}
+\makeoddhead{myheadings}{\hphantom{\thechapter}}{}{}
+\hbadness 99999
+\begin{document}
+\let\grestar\greheightstar
+\begin{center}
+ {\huge\sffamily\bfseries VAR:NAME}
+\end{center}
+\ueberinitiale{VAR:ANN1}{VAR:ANN2}
+\commentary{\textit{VAR:COMMENTARY}}
+\includegabcscore{VAR:FILENAME}
+\end{document}

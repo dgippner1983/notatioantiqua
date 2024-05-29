@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NaProg</class>
+ <widget class="QMainWindow" name="NaProg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Ubuntu</family>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>NaProg</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+    <normaloff>:/images/notantiq-icon.png</normaloff>:/images/notantiq-icon.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border-top-color: rgb(255, 180, 36);</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string extracomment="Document area"/>
+      </property>
+      <property name="statusTip">
+       <string extracomment="Document area"/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="locale">
+       <locale language="C" country="AnyTerritory"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="activationOrder">
+       <enum>QMdiArea::CreationOrder</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QMdiArea::TabbedView</enum>
+      </property>
+      <property name="documentMode">
+       <bool>true</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="tabsMovable">
+       <bool>true</bool>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1030</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="defaultUp">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNeu"/>
+    <addaction name="action_ffnen"/>
+    <addaction name="separator"/>
+    <addaction name="actionSpeichern"/>
+    <addaction name="actionSpeichern_unter"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuelle_drucken"/>
+    <addaction name="separator"/>
+    <addaction name="actionErneut_ffnen"/>
+    <addaction name="separator"/>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <widget class="QMenu" name="menuBearbeiten">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionKopieren"/>
+    <addaction name="actionAusschneiden"/>
+    <addaction name="actionEinf_gen"/>
+    <addaction name="actionFind"/>
+   </widget>
+   <widget class="QMenu" name="menuEinf_gen">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>Insert</string>
+    </property>
+    <widget class="QMenu" name="menuBars">
+     <property name="title">
+      <string>Bars</string>
+     </property>
+     <addaction name="actionVirgula"/>
+     <addaction name="actionQuarter_Bar"/>
+     <addaction name="actionHalf_Bar"/>
+     <addaction name="actionFull_Bar"/>
+     <addaction name="actionDouble_Bar"/>
+     <addaction name="separator"/>
+     <addaction name="actionDominican_Bars"/>
+    </widget>
+    <widget class="QMenu" name="menuSymbols">
+     <property name="title">
+      <string>Symbols</string>
+     </property>
+     <addaction name="actionDagger"/>
+     <addaction name="actionCross"/>
+    </widget>
+    <widget class="QMenu" name="menuSpecial_Characters">
+     <property name="title">
+      <string>Special Characters</string>
+     </property>
+     <addaction name="actionVerse"/>
+     <addaction name="actionResponse"/>
+     <addaction name="actionAntiphon"/>
+     <addaction name="actionAccented"/>
+    </widget>
+    <widget class="QMenu" name="menuChoral_Signs">
+     <property name="title">
+      <string>Choral Signs</string>
+     </property>
+     <addaction name="actionCeleriter"/>
+     <addaction name="actionTenere"/>
+     <addaction name="actionMediocriter"/>
+     <addaction name="actionNon"/>
+     <addaction name="actionExspecta"/>
+    </widget>
+    <widget class="QMenu" name="menuWizards">
+     <property name="title">
+      <string>Wizards</string>
+     </property>
+     <addaction name="actionClef"/>
+     <addaction name="actionHeader_Wizard"/>
+     <addaction name="actionJsgabc"/>
+    </widget>
+    <addaction name="menuBars"/>
+    <addaction name="menuSymbols"/>
+    <addaction name="menuSpecial_Characters"/>
+    <addaction name="menuChoral_Signs"/>
+    <addaction name="separator"/>
+    <addaction name="menuWizards"/>
+   </widget>
+   <widget class="QMenu" name="menuFenster">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionTile"/>
+    <addaction name="actionCascade"/>
+    <addaction name="separator"/>
+    <addaction name="action_Next_Window"/>
+    <addaction name="action_Previous_Window"/>
+    <addaction name="separator"/>
+    <addaction name="actionMaximize"/>
+    <addaction name="actionRestore"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_All"/>
+   </widget>
+   <widget class="QMenu" name="menuHilfe">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_ber"/>
+    <addaction name="action_ber_2"/>
+   </widget>
+   <widget class="QMenu" name="menuEinstellungen">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>E&amp;xtras</string>
+    </property>
+    <addaction name="actionEinstellungen_2"/>
+    <addaction name="actionInitialisierung"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuErstellen">
+    <property name="locale">
+     <locale language="C" country="AnyTerritory"/>
+    </property>
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="actionLyTeX_PDF"/>
+    <addaction name="actionGregorioTeX_PDF"/>
+    <addaction name="separator"/>
+    <addaction name="actionAufr_umen"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDF_ansehen"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuBearbeiten"/>
+   <addaction name="menuEinf_gen"/>
+   <addaction name="menuErstellen"/>
+   <addaction name="menuEinstellungen"/>
+   <addaction name="menuFenster"/>
+   <addaction name="menuHilfe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <action name="action_ber">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/question-symbolic.svg.png</normaloff>:/images/question-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="toolTip">
+    <string>Help</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_ber_2">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/notantiq.icns</normaloff>:/images/notantiq.icns</iconset>
+   </property>
+   <property name="text">
+    <string>About Notatio Antiqua</string>
+   </property>
+   <property name="toolTip">
+    <string>About Notatio Antiqua</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>F13</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionEinstellungen_2">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/preferences-system-symbolic.svg.png</normaloff>:/images/preferences-system-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Options</string>
+   </property>
+   <property name="toolTip">
+    <string>Editor settings and environment settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+,</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionNeu">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-new-symbolic.svg.png</normaloff>:/images/document-new-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="statusTip">
+    <string>Neu</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_ffnen">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-open-symbolic.svg.png</normaloff>:/images/document-open-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Op&amp;en</string>
+   </property>
+   <property name="toolTip">
+    <string>Op&amp;en</string>
+   </property>
+   <property name="statusTip">
+    <string>Öffnet eine Datei</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSpeichern">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-save-symbolic.svg.png</normaloff>:/images/document-save-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save current document</string>
+   </property>
+   <property name="statusTip">
+    <string>Datei speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSpeichern_unter">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-save-as-symbolic.svg.png</normaloff>:/images/document-save-as-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;as</string>
+   </property>
+   <property name="toolTip">
+    <string>Save current document as...</string>
+   </property>
+   <property name="statusTip">
+    <string>Datei unter anderem Namen speichern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionQuelle_drucken">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-print-symbolic.svg.png</normaloff>:/images/document-print-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+   <property name="toolTip">
+    <string>Print source code</string>
+   </property>
+   <property name="statusTip">
+    <string>Quelltext drucken</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionErneut_ffnen">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-edit-symbolic Kopie.svg.png</normaloff>:/images/document-edit-symbolic Kopie.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reopen</string>
+   </property>
+   <property name="toolTip">
+    <string>Reopen current document</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionBeenden">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-export-symbolic.svg.png</normaloff>:/images/document-export-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit Notatio Antiqua</string>
+   </property>
+   <property name="statusTip">
+    <string>tr(&quot;Quit Notatio Antiqua&quot;)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionKopieren">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-copy-symbolic.svg.png</normaloff>:/images/edit-copy-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="toolTip">
+    <string>Copy</string>
+   </property>
+   <property name="statusTip">
+    <string>Ausschnitt kopieren</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAusschneiden">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-cut-symbolic.svg.png</normaloff>:/images/edit-cut-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="toolTip">
+    <string>Cut</string>
+   </property>
+   <property name="statusTip">
+    <string>Ausschneiden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionEinf_gen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-paste-symbolic.svg.png</normaloff>:/images/edit-paste-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="toolTip">
+    <string>Paste</string>
+   </property>
+   <property name="statusTip">
+    <string>Einfügen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionLyTeX_PDF">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/lytexpdf.png</normaloff>:/images/lytexpdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>LyTeX-&gt;PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>Lilypond+LaTeX-Datei in PDF verwandeln</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionGregorioTeX_PDF">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/gabctopdf.png</normaloff>:/images/gabctopdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>GregorioTeX-&gt;PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>gabc-&gt;GregorioTeX-&gt;PDF</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAufr_umen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-delete-symbolic.svg.png</normaloff>:/images/edit-delete-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clean up</string>
+   </property>
+   <property name="toolTip">
+    <string>Clean up temporary files</string>
+   </property>
+   <property name="statusTip">
+    <string>unnötige temporäre Dateien aufräumen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionPDF_ansehen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/acrobat.svg</normaloff>:/images/acrobat.svg</iconset>
+   </property>
+   <property name="text">
+    <string>View PDF</string>
+   </property>
+   <property name="toolTip">
+    <string>View PDF</string>
+   </property>
+   <property name="statusTip">
+    <string>erstellte PDF ansehen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+V</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionInitialisierung">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-select-all-symbolic.svg.png</normaloff>:/images/edit-select-all-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Initialize Notatio Antiqua</string>
+   </property>
+   <property name="toolTip">
+    <string>Initialize Notatio Antiqua (searching application paths &amp;c)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+I</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionHeader_Wizard">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-symbolic.svg.png</normaloff>:/images/edit-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Header Wizard</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+H</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionVirgula">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/virgula.svg</normaloff>:/images/virgula.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Virgula</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Shift+`</string>
+   </property>
+  </action>
+  <action name="actionQuarter_Bar">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/quarter_bar.svg</normaloff>:/images/quarter_bar.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Quarter Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+,</string>
+   </property>
+  </action>
+  <action name="actionHalf_Bar">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/half_bar.svg</normaloff>:/images/half_bar.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Half Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+.</string>
+   </property>
+  </action>
+  <action name="actionDouble_Bar">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/double_bar.svg</normaloff>:/images/double_bar.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Double Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Shift+:</string>
+   </property>
+  </action>
+  <action name="actionDagger">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/dagger.svg</normaloff>:/images/dagger.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Dagger</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta++</string>
+   </property>
+  </action>
+  <action name="actionCross">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/cross.svg</normaloff>:/images/cross.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cross</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+#</string>
+   </property>
+  </action>
+  <action name="actionVerse">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/versus.svg</normaloff>:/images/versus.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Verse</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+V</string>
+   </property>
+  </action>
+  <action name="actionResponse">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/responsa.svg</normaloff>:/images/responsa.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Response</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+R</string>
+   </property>
+  </action>
+  <action name="actionAntiphon">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/antiphon.svg</normaloff>:/images/antiphon.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Antiphon</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+A</string>
+   </property>
+  </action>
+  <action name="actionAccented">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-select-symbolic.svg.png</normaloff>:/images/edit-select-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Accented æ</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Ä</string>
+   </property>
+  </action>
+  <action name="actionCeleriter">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/celeriter.svg</normaloff>:/images/celeriter.svg</iconset>
+   </property>
+   <property name="text">
+    <string>celeriter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+C</string>
+   </property>
+  </action>
+  <action name="actionTenere">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/tenere.svg</normaloff>:/images/tenere.svg</iconset>
+   </property>
+   <property name="text">
+    <string>tenere</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+T</string>
+   </property>
+  </action>
+  <action name="actionMediocriter">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/mediocriter.svg</normaloff>:/images/mediocriter.svg</iconset>
+   </property>
+   <property name="text">
+    <string>mediocriter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+M</string>
+   </property>
+  </action>
+  <action name="actionNon">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/non.svg</normaloff>:/images/non.svg</iconset>
+   </property>
+   <property name="text">
+    <string>non</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+N</string>
+   </property>
+  </action>
+  <action name="actionExspecta">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/exspecta.svg</normaloff>:/images/exspecta.svg</iconset>
+   </property>
+   <property name="text">
+    <string>exspecta</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+E</string>
+   </property>
+  </action>
+  <action name="actionDominican_Bars">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/dominican_bars.svg</normaloff>:/images/dominican_bars.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Dominican Bars</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+B</string>
+   </property>
+  </action>
+  <action name="actionClef">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/clef.svg</normaloff>:/images/clef.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Clef</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionTile">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/windows-tile.svg</normaloff>:/images/windows-tile.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Tile</string>
+   </property>
+  </action>
+  <action name="actionCascade">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/windows-tile.svg</normaloff>:/images/windows-tile.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Cascade</string>
+   </property>
+  </action>
+  <action name="action_Next_Window">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/arrow-right.svg</normaloff>:/images/arrow-right.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&gt; Next Window</string>
+   </property>
+  </action>
+  <action name="action_Previous_Window">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/arrow-left.svg</normaloff>:/images/arrow-left.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&lt; Previous Window</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/window-close-1.svg</normaloff>:/images/window-close-1.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </action>
+  <action name="actionClose_All">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-clear-all-symbolic.svg.png</normaloff>:/images/edit-clear-all-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Close &amp;All</string>
+   </property>
+  </action>
+  <action name="actionMaximize">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/window-maximize.svg</normaloff>:/images/window-maximize.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Maximize</string>
+   </property>
+  </action>
+  <action name="actionRestore">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/window-restore.svg</normaloff>:/images/window-restore.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Restore</string>
+   </property>
+  </action>
+  <action name="actionFull_Bar">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/full_bar.svg</normaloff>:/images/full_bar.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Full Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Shift+:</string>
+   </property>
+  </action>
+  <action name="actionJsgabc">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-tag-symbolic.svg.png</normaloff>:/images/edit-tag-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Psalm Tone Wizard</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+P</string>
+   </property>
+  </action>
+  <action name="actionRecently_opened_files">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-open-recent-symbolic.svg.png</normaloff>:/images/document-open-recent-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recently opened files</string>
+   </property>
+  </action>
+  <action name="actionRecently_opened_files_2">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/document-open-recent-symbolic.svg.png</normaloff>:/images/document-open-recent-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recently opened files</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-undo-symbolic.svg.png</normaloff>:/images/edit-undo-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="statusTip">
+    <string>Undo</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-redo-symbolic.svg.png</normaloff>:/images/edit-redo-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="statusTip">
+    <string>Redo</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-find-symbolic.svg.png</normaloff>:/images/edit-find-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionReplace">
+   <property name="icon">
+    <iconset resource="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc">
+     <normaloff>:/images/edit-find-replace-symbolic.svg.png</normaloff>:/images/edit-find-replace-symbolic.svg.png</iconset>
+   </property>
+   <property name="text">
+    <string>Replace</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="build/Qt6-MinSizeRel/.qt/rcc/naprog.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionClose</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>closeActiveSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionClose_All</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>closeAllSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTile</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>tileSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCascade</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>cascadeSubWindows()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Next_Window</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activateNextSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_Previous_Window</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>activatePreviousSubWindow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMaximize</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRestore</sender>
+   <signal>triggered()</signal>
+   <receiver>mdiArea</receiver>
+   <slot>showNormal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

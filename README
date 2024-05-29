@@ -1,0 +1,32 @@
+Notatio Antiqua 1.2.1.2705
+--------------------------
+
+Licensed under GPLv3, LGPLv2 (hyphen) and UFLv1.0 (Ubuntu Font)
+
+INSTALLING BINARY
+-----------------
+
+On Mac OS X (Apple Silicon), just drag the NotatioAntiqua icon on your application folder
+
+COMPILING FROM SOURCE
+---------------------
+
+Prerequisites:
+- cmake > 3.2
+- build tools (Xcode, MinGW, gcc, ninja)
+- Qt 6.7 or higher
+
+Compiling:
+
+The easiest way is to open CMakeFiles.txt as project in Qt Creator. Also, a .pro-file is provided.
+
+cmake is used for building (with ninja)
+
+Please note: the psalm tone assistant is still under development, as is the help system.
+
+Any questions, tips and complaints can be sent by mail to 
+david@gippner.eu 
+
+Thank you for testing!
+
+(c) 2009-2024 DGSOFTWARE

@@ -1,0 +1,1963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		01287522CD7946BC9404075B /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 77795A162CE44644A6E84D8C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				B0CCAE7C90F44EFAB4A73B41 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		050C49C5E12A42E59E3DF476 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09CAE306ADDF48FF86F6C59B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				8BEFF8F1BBEB00A0932E231D /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AAADE0113C4E4B9BAADE483A /* notatioantiqua_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BF1CFE14FD224855913CA897 /* Build configuration list for PBXAggregateTarget "notatioantiqua_autogen" */;
+			buildPhases = (
+				E0214CD989BDC3A53C309F8D /* Generate CMakeFiles/notatioantiqua_autogen */,
+			);
+			dependencies = (
+				DDD36D3177DF45688E4D5C3A /* PBXTargetDependency */,
+			);
+			name = notatioantiqua_autogen;
+			productName = notatioantiqua_autogen;
+		};
+		F428B95BF1BD4A61B86A0802 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E7EC2456D156481D971248EB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				1A12B340E02B9BA335A2077A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				1082C912655F42F4B649C3ED /* PBXTargetDependency */,
+				338DBD8277494DC394FAAAF4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		049D9E12C5A948F1B1CB21AA /* hyphen.c in Sources */ = {isa = PBXBuildFile; fileRef = 7CC46639D84E4032B40AC503 /* hyphen.c */; };
+		0FF79088BD4E4CBCB02312D0 /* nadoinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2522C179A5EC40ECAFEA7409 /* nadoinit.cpp */; };
+		18FE0B30ABCF409BADBEF458 /* nainit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C86923E3E1549828FF5F424 /* nainit.cpp */; };
+		191895E87ED940D4A2D15E66 /* qrc_naprog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDEB6706EEE040D4B02923AB /* qrc_naprog.cpp */; settings = {COMPILER_FLAGS = "-DCMAKE_SKIP_PRECOMPILE_HEADERS "; }; };
+		27939BAF419746ECAECE2062 /* nafindreplace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFDE508E3CEC46FFAD1831C5 /* nafindreplace.cpp */; };
+		376B175622D649A0934AE61B /* nahelp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6B332F3BCFA4B288263F9CE /* nahelp.cpp */; };
+		38BCE574AD6C4F41B56A8B3B /* nasettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A36458ECDE4F49BEA96C9C7B /* nasettings.cpp */; };
+		401970505ACE45C4BE5C1959 /* notantiq.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA37FB9996504638A3AC3B14 /* notantiq.icns */; };
+		4B9A10F856304E16965E292B /* mocs_compilation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51BB0BD546754844A1FDDE08 /* mocs_compilation.cpp */; };
+		54DD402680D944B394E885A8 /* nasyntax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 146FD8129EAA40D5A7E93651 /* nasyntax.cpp */; };
+		696B2C43D649437C8F681316 /* hnjalloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F47E1CBD06148BB92ED14FE /* hnjalloc.c */; };
+		751B3624B81F4CF290633F9F /* naapplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DC3E700EAB14CA9962BC7FB /* naapplication.cpp */; };
+		775D11C1315F4B498098D244 /* naclefselect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F94C779A718B4A209991573F /* naclefselect.cpp */; };
+		7983EAA97D9F49B0A4B244F2 /* napsalm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5293AC4B5E9B454C989F44DC /* napsalm.cpp */; };
+		8B9486EC335249E4AA0418AC /* qrc_naprog1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC1679053B87497FB6C83013 /* qrc_naprog1.cpp */; settings = {COMPILER_FLAGS = "-DCMAKE_SKIP_PRECOMPILE_HEADERS "; }; };
+		95D499F51D3B41CB823036CE /* qrc_i18n.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126870A04AAF43A3955EFC07 /* qrc_i18n.cpp */; settings = {COMPILER_FLAGS = "-DCMAKE_SKIP_PRECOMPILE_HEADERS "; }; };
+		9EF3AF0491DA4972BDADAAA3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40666ACC8352443986C36F2F /* main.cpp */; };
+		B12574FC1E6D4E378F4CF82A /* naheaderwizard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5194580138F040E99D5B9E08 /* naheaderwizard.cpp */; };
+		D0AA01D9EC044B10BF42012E /* naprog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7C54B21D24347638FE8A6AD /* naprog.cpp */; };
+		DC88314ED1EB437C9B716659 /* najgabc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E414EA8F84297A9779145 /* najgabc.cpp */; };
+		F88FB3B67BB24EDF972BA896 /* namdi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCEEB2C31FC34C12880E6848 /* namdi.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2248D55B664D437A843C3692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050C49C5E12A42E59E3DF476;
+			remoteInfo = ZERO_CHECK;
+		};
+		759B216CCB37436A90B22CFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAADE0113C4E4B9BAADE483A;
+			remoteInfo = notatioantiqua_autogen;
+		};
+		8683CCC2B8F9460C8FB04F34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050C49C5E12A42E59E3DF476;
+			remoteInfo = ZERO_CHECK;
+		};
+		B2BF9088978C4F5BB8E42139 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F428B95BF1BD4A61B86A0802;
+			remoteInfo = ALL_BUILD;
+		};
+		BBF986929E18476598B6FF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050C49C5E12A42E59E3DF476;
+			remoteInfo = ZERO_CHECK;
+		};
+		D2F4D6699A9548B6BA0181F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB76E926D70C4EEE92C8835C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE479DAEEA747A28DD588AA;
+			remoteInfo = notatioantiqua;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D05CC7A76D4DD4B9B28CDD /* document-export-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-export-symbolic.svg.png"; path = "images/document-export-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		033558BAAF9C425D884E709A /* UbuntuMono-RI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "UbuntuMono-RI.ttf"; path = "font/UbuntuMono-RI.ttf"; sourceTree = SOURCE_ROOT; };
+		0539700886DE42748C49B208 /* AGL.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		060ED9865B9246B3895E324D /* namdi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = namdi.h; sourceTree = SOURCE_ROOT; };
+		06136A7DF3804971888B6F8D /* notantiq.qhc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = notantiq.qhc; path = help/notantiq.qhc; sourceTree = SOURCE_ROOT; };
+		071B3FBB7EBE439998229CDA /* qrc_naprog.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = qrc_naprog.cpp.rule; path = .qt/rcc/qrc_naprog.cpp.rule; sourceTree = SOURCE_ROOT; };
+		0734728282FA4D4F9264F107 /* ui_naclefselect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_naclefselect.h; path = notatioantiqua_autogen/include/ui_naclefselect.h; sourceTree = SOURCE_ROOT; };
+		0771DCAEDAF446C784A6609F /* document-open-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-open-symbolic.svg.png"; path = "images/document-open-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		09D21694DAA7486CBFD3304C /* nahelp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nahelp.h; sourceTree = SOURCE_ROOT; };
+		0A296C623626482388A6CE19 /* edit-cut-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-cut-symbolic.svg.png"; path = "images/edit-cut-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		0E4E3F04C0274C42BF9FB4D4 /* format-text-smaller-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-smaller-symbolic.svg.png"; path = "images/format-text-smaller-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		10D0EA1C9F7B49A983DE94F8 /* ui_naprog.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_naprog.h; path = notatioantiqua_autogen/include/ui_naprog.h; sourceTree = SOURCE_ROOT; };
+		10D670E264CB42CF84362702 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-L.ttf"; path = "font/Ubuntu-L.ttf"; sourceTree = SOURCE_ROOT; };
+		111472F0045045EE972F1FC3 /* document-import-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-import-symbolic.svg.png"; path = "images/document-import-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		126870A04AAF43A3955EFC07 /* qrc_i18n.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_i18n.cpp; path = .qt/rcc/qrc_i18n.cpp; sourceTree = SOURCE_ROOT; };
+		13C159F47CA547E1A0B5A383 /* acrobat.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = acrobat.svg; path = images/acrobat.svg; sourceTree = SOURCE_ROOT; };
+		146FD8129EAA40D5A7E93651 /* nasyntax.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nasyntax.cpp; sourceTree = SOURCE_ROOT; };
+		14D61B4CAE7144CB9C2CA8AA /* napsalm.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = napsalm.ui; sourceTree = SOURCE_ROOT; };
+		16237F9ED88E4BC1A727F571 /* window-maximize.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "window-maximize.svg"; path = "images/window-maximize.svg"; sourceTree = SOURCE_ROOT; };
+		187B74B0692B415D8C136ED5 /* full_bar.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = full_bar.svg; path = images/full_bar.svg; sourceTree = SOURCE_ROOT; };
+		1B2816E025EF435A8EADC438 /* document-save-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-save-symbolic.svg.png"; path = "images/document-save-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		1B3DAEC3312B4099AA9C966B /* document-revert-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-revert-symbolic.svg.png"; path = "images/document-revert-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		1C66D4FA31394E77B645C3F2 /* format-justify-center-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-justify-center-symbolic.svg.png"; path = "images/format-justify-center-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		1E924AB80F8848CCB0DCC334 /* QtCore.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		23228DCF9E194DAB89964CD7 /* notantiq-dmgb.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "notantiq-dmgb.png"; path = "images/notantiq-dmgb.png"; sourceTree = SOURCE_ROOT; };
+		25160A4C60B84005A16F1FD4 /* document-new-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-new-symbolic.svg.png"; path = "images/document-new-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		2522C179A5EC40ECAFEA7409 /* nadoinit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nadoinit.cpp; sourceTree = SOURCE_ROOT; };
+		25A4581AF2A84CBFAE7A1E7C /* document-open-recent-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-open-recent-symbolic.svg.png"; path = "images/document-open-recent-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		25F0D8ACAB0A4D8EB18D99FA /* document-save-as-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-save-as-symbolic.svg.png"; path = "images/document-save-as-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		26B3845BAB7F4135BE7F7465 /* naheaderwizard.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = naheaderwizard.h; sourceTree = SOURCE_ROOT; };
+		28029B0E047943E8BC409AB4 /* window-restore.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "window-restore.svg"; path = "images/window-restore.svg"; sourceTree = SOURCE_ROOT; };
+		28094AD070034DF2B89012E9 /* document-properties-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-properties-symbolic.svg.png"; path = "images/document-properties-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		28CD0D57278F42F3B3E4A800 /* edit-find-replace-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-find-replace-symbolic.svg.png"; path = "images/edit-find-replace-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		2B2A3F146058460795A0B824 /* naprog.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = naprog.ui; sourceTree = SOURCE_ROOT; };
+		307A2964328B41CC85185584 /* document-page-setup-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-page-setup-symbolic.svg.png"; path = "images/document-page-setup-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		3156D0DBDE3D4F74B48BA42B /* format-text-remove-formatting-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-remove-formatting-symbolic.svg.png"; path = "images/format-text-remove-formatting-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		355C583990974F27ACB2B50E /* gabctopdf.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = gabctopdf.png; path = images/gabctopdf.png; sourceTree = SOURCE_ROOT; };
+		37E9C71F14C5461F820CBC75 /* format-justify-left-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-justify-left-symbolic.svg.png"; path = "images/format-justify-left-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		385ED211EA984266A84A15C7 /* NaProg-de.qm */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = "NaProg-de.qm"; sourceTree = SOURCE_ROOT; };
+		3B65C1C806C3470886302E2A /* QtHelp.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtHelp.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework; sourceTree = "<absolute>"; };
+		3C8B1F247F3949EFA1B59634 /* ui_nahelp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_nahelp.h; path = notatioantiqua_autogen/include/ui_nahelp.h; sourceTree = SOURCE_ROOT; };
+		3EC2F790A7D545B286B54625 /* napsalm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = napsalm.h; sourceTree = SOURCE_ROOT; };
+		3F11836DD5B844768D8D968E /* edit-undo-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-undo-symbolic.svg.png"; path = "images/edit-undo-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		3F47E1CBD06148BB92ED14FE /* hnjalloc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = hnjalloc.c; sourceTree = SOURCE_ROOT; };
+		40666ACC8352443986C36F2F /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		41976FBDFB0847AC80B80EDD /* edit-redo-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-redo-symbolic.svg.png"; path = "images/edit-redo-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		428A5D82D5A34A738B3665E0 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CMakeFiles/notatioantiqua.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		43F3E18A49F144B0884DBB16 /* QtPdf.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtPdf.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework; sourceTree = "<absolute>"; };
+		452C6B2FD4A54B1BBF0FC427 /* arrow-left.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "arrow-left.svg"; path = "images/arrow-left.svg"; sourceTree = SOURCE_ROOT; };
+		461344574CD448D0AC9C1A2A /* lytexpdf.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = lytexpdf.png; path = images/lytexpdf.png; sourceTree = SOURCE_ROOT; };
+		46151443CE83490CA53F465A /* notantiq-icon.xcf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "notantiq-icon.xcf"; path = "images/notantiq-icon.xcf"; sourceTree = SOURCE_ROOT; };
+		484EEF7E78DF42B8BB67834D /* UbuntuMono-R.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "UbuntuMono-R.ttf"; path = "font/UbuntuMono-R.ttf"; sourceTree = SOURCE_ROOT; };
+		491CF85AC5DD4214A14B9FE6 /* Ubuntu-BI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-BI.ttf"; path = "font/Ubuntu-BI.ttf"; sourceTree = SOURCE_ROOT; };
+		4AE9DB19D648477FA0B87D3B /* nasettings.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = nasettings.ui; sourceTree = SOURCE_ROOT; };
+		4C08D2035B3145C9B1159D20 /* ui_nainit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_nainit.h; path = notatioantiqua_autogen/include/ui_nainit.h; sourceTree = SOURCE_ROOT; };
+		4C38D6D5949646F68A9F94CE /* notantiq.jpg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = notantiq.jpg; path = images/notantiq.jpg; sourceTree = SOURCE_ROOT; };
+		4C86923E3E1549828FF5F424 /* nainit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nainit.cpp; sourceTree = SOURCE_ROOT; };
+		4DB0710BF3E746E492015C9D /* document-edit-symbolic Kopie.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-edit-symbolic Kopie.svg.png"; path = "images/document-edit-symbolic Kopie.svg.png"; sourceTree = SOURCE_ROOT; };
+		4F56025D71924ED6AA062384 /* edit-find-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-find-symbolic.svg.png"; path = "images/edit-find-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		502FE29419F744FCBF900845 /* Ubuntu-C.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-C.ttf"; path = "font/Ubuntu-C.ttf"; sourceTree = SOURCE_ROOT; };
+		5194580138F040E99D5B9E08 /* naheaderwizard.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = naheaderwizard.cpp; sourceTree = SOURCE_ROOT; };
+		51BB0BD546754844A1FDDE08 /* mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = notatioantiqua_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		51CE526A1084408C8FA4EAA0 /* nainit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nainit.h; sourceTree = SOURCE_ROOT; };
+		5293AC4B5E9B454C989F44DC /* napsalm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = napsalm.cpp; sourceTree = SOURCE_ROOT; };
+		563C3C442EBD4ECE9923ED61 /* nasettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nasettings.h; sourceTree = SOURCE_ROOT; };
+		58791B0ED27649BEB8680399 /* virgula.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = virgula.svg; path = images/virgula.svg; sourceTree = SOURCE_ROOT; };
+		5882112C2DC949F8A1AB9D68 /* ui_najgabc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_najgabc.h; path = notatioantiqua_autogen/include/ui_najgabc.h; sourceTree = SOURCE_ROOT; };
+		594652BF5C504082BF79C434 /* QtWidgets.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+		595F1C2DACC445ABA4FBA7C7 /* question-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "question-symbolic.svg.png"; path = "images/question-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		5AE26F9BC8134FE6B8505DE6 /* naclefselect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = naclefselect.h; sourceTree = SOURCE_ROOT; };
+		5CC4801F568F441C989203AD /* Ubuntu-LI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-LI.ttf"; path = "font/Ubuntu-LI.ttf"; sourceTree = SOURCE_ROOT; };
+		5CCD571115F645D6804EC004 /* ui_nasettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_nasettings.h; path = notatioantiqua_autogen/include/ui_nasettings.h; sourceTree = SOURCE_ROOT; };
+		5FE3F9C5191041069357CAF1 /* najgabc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = najgabc.h; sourceTree = SOURCE_ROOT; };
+		622AF499D0D94EA4A4AE2F2B /* qrc_naprog1.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = qrc_naprog1.cpp.rule; path = .qt/rcc/qrc_naprog1.cpp.rule; sourceTree = SOURCE_ROOT; };
+		62CEDC8F77024B3FA0E93F83 /* format-justify-right-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-justify-right-symbolic.svg.png"; path = "images/format-justify-right-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		658FD99E818F4D3AB478E03C /* version.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = version.h; sourceTree = SOURCE_ROOT; };
+		66650A50BBF641FBA4CE8B05 /* window-close-1.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "window-close-1.svg"; path = "images/window-close-1.svg"; sourceTree = SOURCE_ROOT; };
+		668D367FE7854601AAB8D1D2 /* edit-delete-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-delete-symbolic.svg.png"; path = "images/edit-delete-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		669D0841E1484B9D9D2FBDA1 /* naclefselect.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = naclefselect.ui; sourceTree = SOURCE_ROOT; };
+		670237BAB1614DD2A501A1C0 /* naapplication.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = naapplication.h; sourceTree = SOURCE_ROOT; };
+		6B9B49D25FBF491BAB94F7F1 /* clef.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = clef.svg; path = images/clef.svg; sourceTree = SOURCE_ROOT; };
+		6BA4EC6F0B184217A6896CF0 /* cross.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cross.svg; path = images/cross.svg; sourceTree = SOURCE_ROOT; };
+		6BCBD19A12CA4F11AF0279AB /* notantiq.ico */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = notantiq.ico; sourceTree = SOURCE_ROOT; };
+		6DC3E700EAB14CA9962BC7FB /* naapplication.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = naapplication.cpp; sourceTree = SOURCE_ROOT; };
+		722571B1AEFC4C718A002537 /* notantiq.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = notantiq.icns; sourceTree = SOURCE_ROOT; };
+		7250FDA37ED04E6B9D57D4C3 /* action-unavailable-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "action-unavailable-symbolic.svg.png"; path = "images/action-unavailable-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		747102C67AEF46A38883AEF1 /* dagger.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = dagger.svg; path = images/dagger.svg; sourceTree = SOURCE_ROOT; };
+		767695295EAD455098584886 /* notantiq.qch */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = notantiq.qch; path = help/notantiq.qch; sourceTree = SOURCE_ROOT; };
+		7899BD6AD1F14BD3AACAB709 /* naprog.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = naprog.qrc; path = .qt/rcc/naprog.qrc; sourceTree = SOURCE_ROOT; };
+		7982FD3B2F1E4B4AB13A86FF /* celeriter.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = celeriter.svg; path = images/celeriter.svg; sourceTree = SOURCE_ROOT; };
+		7AABD2B7C940423C90D45132 /* notantiq.qhcp */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = notantiq.qhcp; path = help/notantiq.qhcp; sourceTree = SOURCE_ROOT; };
+		7B2611598D0147738A67B1B0 /* UbuntuMono-B.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "UbuntuMono-B.ttf"; path = "font/UbuntuMono-B.ttf"; sourceTree = SOURCE_ROOT; };
+		7B8DCA6FD2284AF58044DFA9 /* najgabc.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = najgabc.ui; sourceTree = SOURCE_ROOT; };
+		7CC46639D84E4032B40AC503 /* hyphen.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = hyphen.c; sourceTree = SOURCE_ROOT; };
+		7CC704DEB1B747ECA3FC5D1F /* nainit.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = nainit.ui; sourceTree = SOURCE_ROOT; };
+		7EC6A0DAB7364135B9E0A1F8 /* naheaderwizard.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = naheaderwizard.ui; sourceTree = SOURCE_ROOT; };
+		7F57076CDC8F4ED8BAA75F10 /* format-text-underline-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-underline-symbolic.svg.png"; path = "images/format-text-underline-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		88CFFB2AE9AC4261B3136835 /* QtGui.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		89944994EA1C41E78F53E1AD /* half_bar.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = half_bar.svg; path = images/half_bar.svg; sourceTree = SOURCE_ROOT; };
+		89CB80C50DE64F52A696BAE9 /* document-print-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-print-symbolic.svg.png"; path = "images/document-print-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		8BB2F336D7314DD8A6341892 /* Ubuntu-MI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-MI.ttf"; path = "font/Ubuntu-MI.ttf"; sourceTree = SOURCE_ROOT; };
+		90C363B922564A77B5DB2F13 /* ui_nafindreplace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_nafindreplace.h; path = notatioantiqua_autogen/include/ui_nafindreplace.h; sourceTree = SOURCE_ROOT; };
+		90E89DE570EB41F1B8329DFD /* format-justify-fill-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-justify-fill-symbolic.svg.png"; path = "images/format-justify-fill-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		95714A32C14A4F83A163CFC8 /* notantiq.css */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = notantiq.css; sourceTree = SOURCE_ROOT; };
+		9591DE7C3D24408D810BDD29 /* notantiq-de.qhc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "notantiq-de.qhc"; path = "help/notantiq-de.qhc"; sourceTree = SOURCE_ROOT; };
+		97B735B8CECE43379E8F1D40 /* notatioantiqua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = notatioantiqua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9885375E560F4E639864FD39 /* quarter_bar.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = quarter_bar.svg; path = images/quarter_bar.svg; sourceTree = SOURCE_ROOT; };
+		998B27D3D7524AAE9ECB6563 /* ui_naheaderwizard.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_naheaderwizard.h; path = notatioantiqua_autogen/include/ui_naheaderwizard.h; sourceTree = SOURCE_ROOT; };
+		9B0E414EA8F84297A9779145 /* najgabc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = najgabc.cpp; sourceTree = SOURCE_ROOT; };
+		9EF132FF56E041E6B44A97FB /* nafindreplace.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = nafindreplace.ui; sourceTree = SOURCE_ROOT; };
+		A09A930F9D7C45A1BDEEC1E1 /* tenere.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = tenere.svg; path = images/tenere.svg; sourceTree = SOURCE_ROOT; };
+		A1040B90C2314C32A1E61905 /* format-text-strikethrough-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-strikethrough-symbolic.svg.png"; path = "images/format-text-strikethrough-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		A3164A8B71D14E0E946C062E /* toolbarBackground.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = toolbarBackground.png; path = images/toolbarBackground.png; sourceTree = SOURCE_ROOT; };
+		A34BB92395834F10ABC8A60F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A36458ECDE4F49BEA96C9C7B /* nasettings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nasettings.cpp; sourceTree = SOURCE_ROOT; };
+		A4AD89E9BF2A40DDAA1F672E /* edit-copy-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-copy-symbolic.svg.png"; path = "images/edit-copy-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		A4E381F6A6D24BB9B2973FF8 /* notantiq-icon.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "notantiq-icon.png"; path = "images/notantiq-icon.png"; sourceTree = SOURCE_ROOT; };
+		A595F93664B4453790FB2453 /* user-home-symbolic.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "user-home-symbolic.svg"; path = "images/user-home-symbolic.svg"; sourceTree = SOURCE_ROOT; };
+		A64877FF43D84947AAD0F26E /* double_bar.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = double_bar.svg; path = images/double_bar.svg; sourceTree = SOURCE_ROOT; };
+		A6974CF561634C4486C0754F /* help-about.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "help-about.svg"; path = "images/help-about.svg"; sourceTree = SOURCE_ROOT; };
+		A87CA9CC150A4DA591BF816F /* hyphen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = hyphen.h; sourceTree = SOURCE_ROOT; };
+		A94DCB4674AC419C9C253B4F /* NaProg-en.qm */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = "NaProg-en.qm"; sourceTree = SOURCE_ROOT; };
+		AA2DFA6C65DC4C5A993AD34D /* arrow-right.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "arrow-right.svg"; path = "images/arrow-right.svg"; sourceTree = SOURCE_ROOT; };
+		AA344962D75E43988D413036 /* i18n.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = i18n.qrc; path = .qt/rcc/i18n.qrc; sourceTree = SOURCE_ROOT; };
+		AA37FB9996504638A3AC3B14 /* notantiq.icns */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = notantiq.icns; path = images/notantiq.icns; sourceTree = SOURCE_ROOT; };
+		AA6EAD0C37484698BEF8E47C /* preferences-system-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "preferences-system-symbolic.svg.png"; path = "images/preferences-system-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		AEE92377BC8E45649A6D6D4B /* dominican_bars.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = dominican_bars.svg; path = images/dominican_bars.svg; sourceTree = SOURCE_ROOT; };
+		AEF1176C532F4FFC9AF01CF9 /* dgs.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = dgs.png; path = images/dgs.png; sourceTree = SOURCE_ROOT; };
+		B0331C97E9824E7AAEE1AC2D /* NaProg-fr.qm */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = "NaProg-fr.qm"; sourceTree = SOURCE_ROOT; };
+		B0EC3DF89544498A8C547D82 /* edit-clear-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-clear-symbolic.svg.png"; path = "images/edit-clear-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		B27298E1C102437B96ED24AA /* format-text-bold-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-bold-symbolic.svg.png"; path = "images/format-text-bold-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		B2D37AF0B9FB4AA5936D1043 /* antiphon.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = antiphon.svg; path = images/antiphon.svg; sourceTree = SOURCE_ROOT; };
+		B8D5D3FB7D484E29917A3760 /* edit-clear-symbolic-rtl.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-clear-symbolic-rtl.svg.png"; path = "images/edit-clear-symbolic-rtl.svg.png"; sourceTree = SOURCE_ROOT; };
+		B949843E489C41A68C835CA7 /* nafindreplace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nafindreplace.h; sourceTree = SOURCE_ROOT; };
+		B97F2E94B37A464D8BE17050 /* nahelp.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = nahelp.ui; sourceTree = SOURCE_ROOT; };
+		BD42044B6BC046959375080D /* Ubuntu-R.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-R.ttf"; path = "font/Ubuntu-R.ttf"; sourceTree = SOURCE_ROOT; };
+		BDEB6706EEE040D4B02923AB /* qrc_naprog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_naprog.cpp; path = .qt/rcc/qrc_naprog.cpp; sourceTree = SOURCE_ROOT; };
+		BE849004CB514202A80FDE1C /* QtPrintSupport.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtPrintSupport.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework; sourceTree = "<absolute>"; };
+		C174A0681B474DD9BC5BBBB0 /* nasyntax.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nasyntax.h; sourceTree = SOURCE_ROOT; };
+		C19AF998668747BDBC8497DC /* naprog.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = naprog.h; sourceTree = SOURCE_ROOT; };
+		C19BEC6A0A1846CBAF455F0B /* nadoinit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = nadoinit.h; sourceTree = SOURCE_ROOT; };
+		C23AB461BB0C43FB86F778EA /* Ubuntu-RI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-RI.ttf"; path = "font/Ubuntu-RI.ttf"; sourceTree = SOURCE_ROOT; };
+		C64AAA5517BE48A98F86F6F8 /* naprog1.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = naprog1.qrc; path = .qt/rcc/naprog1.qrc; sourceTree = SOURCE_ROOT; };
+		CADF4DC2EF814FCD933244C0 /* UbuntuMono-BI.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "UbuntuMono-BI.ttf"; path = "font/UbuntuMono-BI.ttf"; sourceTree = SOURCE_ROOT; };
+		CB27C1ED06B14AA68297D0E1 /* edit-tag-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-tag-symbolic.svg.png"; path = "images/edit-tag-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		CC1679053B87497FB6C83013 /* qrc_naprog1.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_naprog1.cpp; path = .qt/rcc/qrc_naprog1.cpp; sourceTree = SOURCE_ROOT; };
+		CCEEB2C31FC34C12880E6848 /* namdi.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = namdi.cpp; sourceTree = SOURCE_ROOT; };
+		CD231A89BF2345708A65C8C1 /* edit-select-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-select-symbolic.svg.png"; path = "images/edit-select-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		CD750B5C3ED64FB096FF1D64 /* non.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = non.svg; path = images/non.svg; sourceTree = SOURCE_ROOT; };
+		CE8765368AE149038034C558 /* qrc_i18n.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = qrc_i18n.cpp.rule; path = .qt/rcc/qrc_i18n.cpp.rule; sourceTree = SOURCE_ROOT; };
+		CFDE508E3CEC46FFAD1831C5 /* nafindreplace.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nafindreplace.cpp; sourceTree = SOURCE_ROOT; };
+		D104352799BE48748F3A8C53 /* format-text-italic-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-italic-symbolic.svg.png"; path = "images/format-text-italic-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		D28981C9AD6B4F539562FF79 /* edit-select-all-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-select-all-symbolic.svg.png"; path = "images/edit-select-all-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		D61CDADFAE174CCC9724E76E /* versus.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = versus.svg; path = images/versus.svg; sourceTree = SOURCE_ROOT; };
+		D6A12DB1F13C4B6FBAA69AF3 /* edit-paste-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-paste-symbolic.svg.png"; path = "images/edit-paste-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		D811056C15CA46E98D2B0F62 /* ui_napsalm.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ui_napsalm.h; path = notatioantiqua_autogen/include/ui_napsalm.h; sourceTree = SOURCE_ROOT; };
+		DB6D3649818A475DBDE63E47 /* napsalm.csv */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = napsalm.csv; sourceTree = SOURCE_ROOT; };
+		DBF61E86BD2C4156A60059D2 /* notantiq-fr.qhc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "notantiq-fr.qhc"; path = "help/notantiq-fr.qhc"; sourceTree = SOURCE_ROOT; };
+		DE07F50E156F4601A33233E8 /* windows-tile.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "windows-tile.svg"; path = "images/windows-tile.svg"; sourceTree = SOURCE_ROOT; };
+		DEDB05965BC74607A10B86CC /* QtSql.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtSql.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework; sourceTree = "<absolute>"; };
+		DF9AD3D281CE492E8607BA46 /* exspecta.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = exspecta.svg; path = images/exspecta.svg; sourceTree = SOURCE_ROOT; };
+		DFC2620526D24945A78F627D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E770EB9A54EA43689763239F /* mediocriter.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = mediocriter.svg; path = images/mediocriter.svg; sourceTree = SOURCE_ROOT; };
+		E7C54B21D24347638FE8A6AD /* naprog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = naprog.cpp; sourceTree = SOURCE_ROOT; };
+		E841C9D1B56246FD9CEAF0AF /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ED3D0AB7D0F844BBB22911FF /* window-minimize.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "window-minimize.svg"; path = "images/window-minimize.svg"; sourceTree = SOURCE_ROOT; };
+		EDBB25120AD64ED88A053025 /* edit-clear-all-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-clear-all-symbolic.svg.png"; path = "images/edit-clear-all-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		F23A0B4BA39B4A1B83E6DB46 /* edit-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "edit-symbolic.svg.png"; path = "images/edit-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		F4899B18C7994F39908A7918 /* hnjalloc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = hnjalloc.h; sourceTree = SOURCE_ROOT; };
+		F4A5B3F13310449D8B6B753F /* document-print-preview-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-print-preview-symbolic.svg.png"; path = "images/document-print-preview-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		F52A4F7F99994C019312D303 /* format-text-larger-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "format-text-larger-symbolic.svg.png"; path = "images/format-text-larger-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+		F6B332F3BCFA4B288263F9CE /* nahelp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = nahelp.cpp; sourceTree = SOURCE_ROOT; };
+		F94C779A718B4A209991573F /* naclefselect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = naclefselect.cpp; sourceTree = SOURCE_ROOT; };
+		FA95A07D8FA6467F98F3D1F7 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-B.ttf"; path = "font/Ubuntu-B.ttf"; sourceTree = SOURCE_ROOT; };
+		FAA2AB2943E24361A0BD4B75 /* responsa.svg */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = responsa.svg; path = images/responsa.svg; sourceTree = SOURCE_ROOT; };
+		FC78F93DB2D84969823A2AA5 /* Ubuntu-M.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "Ubuntu-M.ttf"; path = "font/Ubuntu-M.ttf"; sourceTree = SOURCE_ROOT; };
+		FD29447868624EB9834540C2 /* QtSvg.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = QtSvg.framework; path = /Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework; sourceTree = "<absolute>"; };
+		FD518436B9D945B89B8CC3C2 /* document-send-symbolic.svg.png */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = "document-send-symbolic.svg.png"; path = "images/document-send-symbolic.svg.png"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7650A529002465A9ED765C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03BA1F2CA05A454D929EF15A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D01B2B7D14448878E2399D0 /* Generated */,
+				3F47E1CBD06148BB92ED14FE /* hnjalloc.c */,
+				7CC46639D84E4032B40AC503 /* hyphen.c */,
+				40666ACC8352443986C36F2F /* main.cpp */,
+				6DC3E700EAB14CA9962BC7FB /* naapplication.cpp */,
+				F94C779A718B4A209991573F /* naclefselect.cpp */,
+				2522C179A5EC40ECAFEA7409 /* nadoinit.cpp */,
+				CFDE508E3CEC46FFAD1831C5 /* nafindreplace.cpp */,
+				5194580138F040E99D5B9E08 /* naheaderwizard.cpp */,
+				F6B332F3BCFA4B288263F9CE /* nahelp.cpp */,
+				4C86923E3E1549828FF5F424 /* nainit.cpp */,
+				9B0E414EA8F84297A9779145 /* najgabc.cpp */,
+				CCEEB2C31FC34C12880E6848 /* namdi.cpp */,
+				E7C54B21D24347638FE8A6AD /* naprog.cpp */,
+				5293AC4B5E9B454C989F44DC /* napsalm.cpp */,
+				A36458ECDE4F49BEA96C9C7B /* nasettings.cpp */,
+				146FD8129EAA40D5A7E93651 /* nasyntax.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2227EA3434164C11B7DA437C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3D01B2B7D14448878E2399D0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				AA344962D75E43988D413036 /* i18n.qrc */,
+				7899BD6AD1F14BD3AACAB709 /* naprog.qrc */,
+				C64AAA5517BE48A98F86F6F8 /* naprog1.qrc */,
+				126870A04AAF43A3955EFC07 /* qrc_i18n.cpp */,
+				BDEB6706EEE040D4B02923AB /* qrc_naprog.cpp */,
+				CC1679053B87497FB6C83013 /* qrc_naprog1.cpp */,
+				0734728282FA4D4F9264F107 /* ui_naclefselect.h */,
+				90C363B922564A77B5DB2F13 /* ui_nafindreplace.h */,
+				998B27D3D7524AAE9ECB6563 /* ui_naheaderwizard.h */,
+				3C8B1F247F3949EFA1B59634 /* ui_nahelp.h */,
+				4C08D2035B3145C9B1159D20 /* ui_nainit.h */,
+				5882112C2DC949F8A1AB9D68 /* ui_najgabc.h */,
+				10D0EA1C9F7B49A983DE94F8 /* ui_naprog.h */,
+				D811056C15CA46E98D2B0F62 /* ui_napsalm.h */,
+				5CCD571115F645D6804EC004 /* ui_nasettings.h */,
+				51BB0BD546754844A1FDDE08 /* mocs_compilation.cpp */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		3FE247011BFA478D8D4D11F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43F3E18A49F144B0884DBB16 /* QtPdf.framework */,
+				3B65C1C806C3470886302E2A /* QtHelp.framework */,
+				DEDB05965BC74607A10B86CC /* QtSql.framework */,
+				BE849004CB514202A80FDE1C /* QtPrintSupport.framework */,
+				594652BF5C504082BF79C434 /* QtWidgets.framework */,
+				FD29447868624EB9834540C2 /* QtSvg.framework */,
+				88CFFB2AE9AC4261B3136835 /* QtGui.framework */,
+				1E924AB80F8848CCB0DCC334 /* QtCore.framework */,
+				0539700886DE42748C49B208 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41EF8C7C93F04436B277250F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				428A5D82D5A34A738B3665E0 /* Info.plist */,
+				7250FDA37ED04E6B9D57D4C3 /* action-unavailable-symbolic.svg.png */,
+				AEF1176C532F4FFC9AF01CF9 /* dgs.png */,
+				4DB0710BF3E746E492015C9D /* document-edit-symbolic Kopie.svg.png */,
+				02D05CC7A76D4DD4B9B28CDD /* document-export-symbolic.svg.png */,
+				111472F0045045EE972F1FC3 /* document-import-symbolic.svg.png */,
+				25160A4C60B84005A16F1FD4 /* document-new-symbolic.svg.png */,
+				25A4581AF2A84CBFAE7A1E7C /* document-open-recent-symbolic.svg.png */,
+				0771DCAEDAF446C784A6609F /* document-open-symbolic.svg.png */,
+				307A2964328B41CC85185584 /* document-page-setup-symbolic.svg.png */,
+				F4A5B3F13310449D8B6B753F /* document-print-preview-symbolic.svg.png */,
+				89CB80C50DE64F52A696BAE9 /* document-print-symbolic.svg.png */,
+				28094AD070034DF2B89012E9 /* document-properties-symbolic.svg.png */,
+				1B3DAEC3312B4099AA9C966B /* document-revert-symbolic.svg.png */,
+				25F0D8ACAB0A4D8EB18D99FA /* document-save-as-symbolic.svg.png */,
+				1B2816E025EF435A8EADC438 /* document-save-symbolic.svg.png */,
+				FD518436B9D945B89B8CC3C2 /* document-send-symbolic.svg.png */,
+				EDBB25120AD64ED88A053025 /* edit-clear-all-symbolic.svg.png */,
+				B8D5D3FB7D484E29917A3760 /* edit-clear-symbolic-rtl.svg.png */,
+				B0EC3DF89544498A8C547D82 /* edit-clear-symbolic.svg.png */,
+				A4AD89E9BF2A40DDAA1F672E /* edit-copy-symbolic.svg.png */,
+				0A296C623626482388A6CE19 /* edit-cut-symbolic.svg.png */,
+				668D367FE7854601AAB8D1D2 /* edit-delete-symbolic.svg.png */,
+				28CD0D57278F42F3B3E4A800 /* edit-find-replace-symbolic.svg.png */,
+				4F56025D71924ED6AA062384 /* edit-find-symbolic.svg.png */,
+				D6A12DB1F13C4B6FBAA69AF3 /* edit-paste-symbolic.svg.png */,
+				41976FBDFB0847AC80B80EDD /* edit-redo-symbolic.svg.png */,
+				D28981C9AD6B4F539562FF79 /* edit-select-all-symbolic.svg.png */,
+				CD231A89BF2345708A65C8C1 /* edit-select-symbolic.svg.png */,
+				F23A0B4BA39B4A1B83E6DB46 /* edit-symbolic.svg.png */,
+				CB27C1ED06B14AA68297D0E1 /* edit-tag-symbolic.svg.png */,
+				3F11836DD5B844768D8D968E /* edit-undo-symbolic.svg.png */,
+				1C66D4FA31394E77B645C3F2 /* format-justify-center-symbolic.svg.png */,
+				90E89DE570EB41F1B8329DFD /* format-justify-fill-symbolic.svg.png */,
+				37E9C71F14C5461F820CBC75 /* format-justify-left-symbolic.svg.png */,
+				62CEDC8F77024B3FA0E93F83 /* format-justify-right-symbolic.svg.png */,
+				B27298E1C102437B96ED24AA /* format-text-bold-symbolic.svg.png */,
+				D104352799BE48748F3A8C53 /* format-text-italic-symbolic.svg.png */,
+				F52A4F7F99994C019312D303 /* format-text-larger-symbolic.svg.png */,
+				3156D0DBDE3D4F74B48BA42B /* format-text-remove-formatting-symbolic.svg.png */,
+				0E4E3F04C0274C42BF9FB4D4 /* format-text-smaller-symbolic.svg.png */,
+				A1040B90C2314C32A1E61905 /* format-text-strikethrough-symbolic.svg.png */,
+				7F57076CDC8F4ED8BAA75F10 /* format-text-underline-symbolic.svg.png */,
+				355C583990974F27ACB2B50E /* gabctopdf.png */,
+				461344574CD448D0AC9C1A2A /* lytexpdf.png */,
+				23228DCF9E194DAB89964CD7 /* notantiq-dmgb.png */,
+				A4E381F6A6D24BB9B2973FF8 /* notantiq-icon.png */,
+				4C38D6D5949646F68A9F94CE /* notantiq.jpg */,
+				AA6EAD0C37484698BEF8E47C /* preferences-system-symbolic.svg.png */,
+				595F1C2DACC445ABA4FBA7C7 /* question-symbolic.svg.png */,
+				A3164A8B71D14E0E946C062E /* toolbarBackground.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4B5CE06ED5C946108B42AF2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		505D8E315AE742E8872082CD /* QtInternalTargets */ = {
+			isa = PBXGroup;
+			children = (
+				CD1012B34F934ACCB354D06B /* notatioantiqua_autogen */,
+			);
+			name = QtInternalTargets;
+			sourceTree = "<group>";
+		};
+		9D3EA11056CA4BB09F1536E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97B735B8CECE43379E8F1D40 /* notatioantiqua.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E1D571408B8449FB3D25A0F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		AC8F63A81DDF49879011796C = {
+			isa = PBXGroup;
+			children = (
+				E3D8A9FCD8834AA6B1F01CFD /* notatioantiqua */,
+				505D8E315AE742E8872082CD /* QtInternalTargets */,
+				FE1885192C4F488F96AC19FB /* ALL_BUILD */,
+				9D3EA11056CA4BB09F1536E4 /* Products */,
+				3FE247011BFA478D8D4D11F5 /* Frameworks */,
+				4B5CE06ED5C946108B42AF2D /* Resources */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		ACE3233E179F45F8AB1ACAE9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				CE8765368AE149038034C558 /* qrc_i18n.cpp.rule */,
+				071B3FBB7EBE439998229CDA /* qrc_naprog.cpp.rule */,
+				622AF499D0D94EA4A4AE2F2B /* qrc_naprog1.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CD1012B34F934ACCB354D06B /* notatioantiqua_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				2227EA3434164C11B7DA437C /* CMake Rules */,
+				A34BB92395834F10ABC8A60F /* CMakeLists.txt */,
+			);
+			name = notatioantiqua_autogen;
+			sourceTree = "<group>";
+		};
+		DD57752184DC405ABD5E1D8E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4899B18C7994F39908A7918 /* hnjalloc.h */,
+				A87CA9CC150A4DA591BF816F /* hyphen.h */,
+				670237BAB1614DD2A501A1C0 /* naapplication.h */,
+				5AE26F9BC8134FE6B8505DE6 /* naclefselect.h */,
+				C19BEC6A0A1846CBAF455F0B /* nadoinit.h */,
+				B949843E489C41A68C835CA7 /* nafindreplace.h */,
+				26B3845BAB7F4135BE7F7465 /* naheaderwizard.h */,
+				09D21694DAA7486CBFD3304C /* nahelp.h */,
+				51CE526A1084408C8FA4EAA0 /* nainit.h */,
+				5FE3F9C5191041069357CAF1 /* najgabc.h */,
+				060ED9865B9246B3895E324D /* namdi.h */,
+				C19AF998668747BDBC8497DC /* naprog.h */,
+				3EC2F790A7D545B286B54625 /* napsalm.h */,
+				563C3C442EBD4ECE9923ED61 /* nasettings.h */,
+				C174A0681B474DD9BC5BBBB0 /* nasyntax.h */,
+				658FD99E818F4D3AB478E03C /* version.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E3D8A9FCD8834AA6B1F01CFD /* notatioantiqua */ = {
+			isa = PBXGroup;
+			children = (
+				03BA1F2CA05A454D929EF15A /* Source Files */,
+				DD57752184DC405ABD5E1D8E /* Header Files */,
+				41EF8C7C93F04436B277250F /* Resources */,
+				ACE3233E179F45F8AB1ACAE9 /* CMake Rules */,
+				DFC2620526D24945A78F627D /* CMakeLists.txt */,
+				385ED211EA984266A84A15C7 /* NaProg-de.qm */,
+				A94DCB4674AC419C9C253B4F /* NaProg-en.qm */,
+				B0331C97E9824E7AAEE1AC2D /* NaProg-fr.qm */,
+				FA95A07D8FA6467F98F3D1F7 /* Ubuntu-B.ttf */,
+				491CF85AC5DD4214A14B9FE6 /* Ubuntu-BI.ttf */,
+				502FE29419F744FCBF900845 /* Ubuntu-C.ttf */,
+				10D670E264CB42CF84362702 /* Ubuntu-L.ttf */,
+				5CC4801F568F441C989203AD /* Ubuntu-LI.ttf */,
+				FC78F93DB2D84969823A2AA5 /* Ubuntu-M.ttf */,
+				8BB2F336D7314DD8A6341892 /* Ubuntu-MI.ttf */,
+				BD42044B6BC046959375080D /* Ubuntu-R.ttf */,
+				C23AB461BB0C43FB86F778EA /* Ubuntu-RI.ttf */,
+				7B2611598D0147738A67B1B0 /* UbuntuMono-B.ttf */,
+				CADF4DC2EF814FCD933244C0 /* UbuntuMono-BI.ttf */,
+				484EEF7E78DF42B8BB67834D /* UbuntuMono-R.ttf */,
+				033558BAAF9C425D884E709A /* UbuntuMono-RI.ttf */,
+				9591DE7C3D24408D810BDD29 /* notantiq-de.qhc */,
+				DBF61E86BD2C4156A60059D2 /* notantiq-fr.qhc */,
+				767695295EAD455098584886 /* notantiq.qch */,
+				06136A7DF3804971888B6F8D /* notantiq.qhc */,
+				7AABD2B7C940423C90D45132 /* notantiq.qhcp */,
+				13C159F47CA547E1A0B5A383 /* acrobat.svg */,
+				B2D37AF0B9FB4AA5936D1043 /* antiphon.svg */,
+				452C6B2FD4A54B1BBF0FC427 /* arrow-left.svg */,
+				AA2DFA6C65DC4C5A993AD34D /* arrow-right.svg */,
+				7982FD3B2F1E4B4AB13A86FF /* celeriter.svg */,
+				6B9B49D25FBF491BAB94F7F1 /* clef.svg */,
+				6BA4EC6F0B184217A6896CF0 /* cross.svg */,
+				747102C67AEF46A38883AEF1 /* dagger.svg */,
+				AEE92377BC8E45649A6D6D4B /* dominican_bars.svg */,
+				A64877FF43D84947AAD0F26E /* double_bar.svg */,
+				DF9AD3D281CE492E8607BA46 /* exspecta.svg */,
+				187B74B0692B415D8C136ED5 /* full_bar.svg */,
+				89944994EA1C41E78F53E1AD /* half_bar.svg */,
+				A6974CF561634C4486C0754F /* help-about.svg */,
+				E770EB9A54EA43689763239F /* mediocriter.svg */,
+				CD750B5C3ED64FB096FF1D64 /* non.svg */,
+				46151443CE83490CA53F465A /* notantiq-icon.xcf */,
+				AA37FB9996504638A3AC3B14 /* notantiq.icns */,
+				9885375E560F4E639864FD39 /* quarter_bar.svg */,
+				FAA2AB2943E24361A0BD4B75 /* responsa.svg */,
+				A09A930F9D7C45A1BDEEC1E1 /* tenere.svg */,
+				A595F93664B4453790FB2453 /* user-home-symbolic.svg */,
+				D61CDADFAE174CCC9724E76E /* versus.svg */,
+				58791B0ED27649BEB8680399 /* virgula.svg */,
+				66650A50BBF641FBA4CE8B05 /* window-close-1.svg */,
+				16237F9ED88E4BC1A727F571 /* window-maximize.svg */,
+				ED3D0AB7D0F844BBB22911FF /* window-minimize.svg */,
+				28029B0E047943E8BC409AB4 /* window-restore.svg */,
+				DE07F50E156F4601A33233E8 /* windows-tile.svg */,
+				669D0841E1484B9D9D2FBDA1 /* naclefselect.ui */,
+				9EF132FF56E041E6B44A97FB /* nafindreplace.ui */,
+				7EC6A0DAB7364135B9E0A1F8 /* naheaderwizard.ui */,
+				B97F2E94B37A464D8BE17050 /* nahelp.ui */,
+				7CC704DEB1B747ECA3FC5D1F /* nainit.ui */,
+				7B8DCA6FD2284AF58044DFA9 /* najgabc.ui */,
+				2B2A3F146058460795A0B824 /* naprog.ui */,
+				DB6D3649818A475DBDE63E47 /* napsalm.csv */,
+				14D61B4CAE7144CB9C2CA8AA /* napsalm.ui */,
+				4AE9DB19D648477FA0B87D3B /* nasettings.ui */,
+				95714A32C14A4F83A163CFC8 /* notantiq.css */,
+				722571B1AEFC4C718A002537 /* notantiq.icns */,
+				6BCBD19A12CA4F11AF0279AB /* notantiq.ico */,
+			);
+			name = notatioantiqua;
+			sourceTree = "<group>";
+		};
+		FE1885192C4F488F96AC19FB /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9E1D571408B8449FB3D25A0F /* CMake Rules */,
+				E841C9D1B56246FD9CEAF0AF /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE479DAEEA747A28DD588AA /* notatioantiqua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E6FDE9ECB15483A9952D29C /* Build configuration list for PBXNativeTarget "notatioantiqua" */;
+			buildPhases = (
+				C8A270204229EBA2F2FD6833 /* Generate .qt/rcc/qrc_i18n.cpp */,
+				1197F98FFF97C605862AE4D7 /* Generate .qt/rcc/qrc_naprog.cpp */,
+				EC731A9EDE66A652BF9DCBA5 /* Generate .qt/rcc/qrc_naprog1.cpp */,
+				0E2E32F65C0D45D9A0A0D6DB /* Resources */,
+				64530BFE595A41FFADFEBAE3 /* Sources */,
+				D7650A529002465A9ED765C3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C324EF4B23B4BB9BB2D95E5 /* PBXTargetDependency */,
+				708A3F86B04F41859156F449 /* PBXTargetDependency */,
+			);
+			name = notatioantiqua;
+			productName = notatioantiqua;
+			productReference = 97B735B8CECE43379E8F1D40 /* notatioantiqua.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB76E926D70C4EEE92C8835C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = com.dgsoftware;
+			};
+			buildConfigurationList = C8830F3A745442D9B71D2D24 /* Build configuration list for PBXProject "notatioantiqua" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC8F63A81DDF49879011796C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F428B95BF1BD4A61B86A0802 /* ALL_BUILD */,
+				050C49C5E12A42E59E3DF476 /* ZERO_CHECK */,
+				01287522CD7946BC9404075B /* install */,
+				8BE479DAEEA747A28DD588AA /* notatioantiqua */,
+				AAADE0113C4E4B9BAADE483A /* notatioantiqua_autogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E2E32F65C0D45D9A0A0D6DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401970505ACE45C4BE5C1959 /* notantiq.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1197F98FFF97C605862AE4D7 /* Generate .qt/rcc/qrc_naprog.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog.qrc,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/help/notantiq-de.qhc",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/help/notantiq-fr.qhc",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/help/notantiq.qch,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/help/notantiq.qhc,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/help/notantiq.qhcp,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/acrobat.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/action-unavailable-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/antiphon.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/arrow-left.svg",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/arrow-right.svg",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/celeriter.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/clef.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/cross.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/dagger.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/dgs.png,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-edit-symbolic Kopie.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-export-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-import-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-new-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-open-recent-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-open-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-page-setup-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-print-preview-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-print-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-properties-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-revert-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-save-as-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-save-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/document-send-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/dominican_bars.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/double_bar.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-clear-all-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-clear-symbolic-rtl.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-clear-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-copy-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-cut-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-delete-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-find-replace-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-find-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-paste-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-redo-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-select-all-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-select-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-tag-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/edit-undo-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/exspecta.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-justify-center-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-justify-fill-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-justify-left-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-justify-right-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-bold-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-italic-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-larger-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-remove-formatting-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-smaller-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-strikethrough-symbolic.svg.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/format-text-underline-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/full_bar.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/gabctopdf.png,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/half_bar.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/help-about.svg",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/lytexpdf.png,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/mediocriter.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/non.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/notantiq-dmgb.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/notantiq-icon.png",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/notantiq-icon.xcf",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/notantiq.icns,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/notantiq.jpg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/preferences-system-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/quarter_bar.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/question-symbolic.svg.png",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/responsa.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/tenere.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/toolbarBackground.png,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/user-home-symbolic.svg",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/versus.svg,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/virgula.svg,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/window-close-1.svg",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/window-maximize.svg",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/window-minimize.svg",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/window-restore.svg",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/images/windows-tile.svg",
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/napsalm.csv,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notantiq.css,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notantiq.icns,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notantiq.ico,
+				/Users/davidgippner/Qt/6.7.1/macos/./libexec/rcc,
+			);
+			name = "Generate .qt/rcc/qrc_naprog.cpp";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog.cpp,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog.cpp --name naprog /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog.cpp --name naprog /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog.cpp --name naprog /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog.cpp --name naprog /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog.qrc --no-zstd\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A12B340E02B9BA335A2077A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/ALL_BUILD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BEFF8F1BBEB00A0932E231D /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/ZERO_CHECK,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  make -f /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  make -f /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  make -f /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  make -f /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A270204229EBA2F2FD6833 /* Generate .qt/rcc/qrc_i18n.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/i18n.qrc,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/NaProg-de.qm",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/NaProg-en.qm",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/NaProg-fr.qm",
+				/Users/davidgippner/Qt/6.7.1/macos/./libexec/rcc,
+			);
+			name = "Generate .qt/rcc/qrc_i18n.cpp";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_i18n.cpp,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_i18n.cpp --name i18n /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/i18n.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_i18n.cpp --name i18n /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/i18n.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_i18n.cpp --name i18n /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/i18n.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_i18n.cpp --name i18n /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/i18n.qrc --no-zstd\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0214CD989BDC3A53C309F8D /* Generate CMakeFiles/notatioantiqua_autogen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/notatioantiqua_autogen";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_naclefselect.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_nafindreplace.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_naheaderwizard.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_nahelp.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_nainit.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_najgabc.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_naprog.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_napsalm.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug/ui_nasettings.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_naclefselect.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_nafindreplace.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_naheaderwizard.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_nahelp.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_nainit.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_najgabc.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_naprog.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_napsalm.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel/ui_nasettings.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_naclefselect.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_nafindreplace.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_naheaderwizard.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_nahelp.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_nainit.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_najgabc.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_naprog.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_napsalm.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo/ui_nasettings.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_naclefselect.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_nafindreplace.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_naheaderwizard.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_nahelp.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_nainit.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_najgabc.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_naprog.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_napsalm.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release/ui_nasettings.h,
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/mocs_compilation.cpp,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Debug\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Release\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json RelWithDebInfo\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Debug\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Release\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json RelWithDebInfo\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Debug\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Release\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json RelWithDebInfo\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Debug\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json Release\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json MinSizeRel\n  /opt/homebrew/Cellar/cmake/3.29.3/bin/cmake -E cmake_autogen /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua_autogen.dir/AutogenInfo.json RelWithDebInfo\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC731A9EDE66A652BF9DCBA5 /* Generate .qt/rcc/qrc_naprog1.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog1.qrc,
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-B.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-BI.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-C.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-L.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-LI.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-M.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-MI.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-R.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/Ubuntu-RI.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/UbuntuMono-B.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/UbuntuMono-BI.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/UbuntuMono-R.ttf",
+				"/Users/davidgippner/Programmierung/Qt/notatioantiqua/font/UbuntuMono-RI.ttf",
+				/Users/davidgippner/Qt/6.7.1/macos/./libexec/rcc,
+			);
+			name = "Generate .qt/rcc/qrc_naprog1.cpp";
+			outputPaths = (
+				/Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog1.cpp,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog1.cpp --name naprog1 /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog1.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog1.cpp --name naprog1 /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog1.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog1.cpp --name naprog1 /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog1.qrc --no-zstd\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/davidgippner/Programmierung/Qt/notatioantiqua\n  /Users/davidgippner/Qt/6.7.1/macos/libexec/rcc --output /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/qrc_naprog1.cpp --name naprog1 /Users/davidgippner/Programmierung/Qt/notatioantiqua/.qt/rcc/naprog1.qrc --no-zstd\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64530BFE595A41FFADFEBAE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D499F51D3B41CB823036CE /* qrc_i18n.cpp in Sources */,
+				191895E87ED940D4A2D15E66 /* qrc_naprog.cpp in Sources */,
+				8B9486EC335249E4AA0418AC /* qrc_naprog1.cpp in Sources */,
+				696B2C43D649437C8F681316 /* hnjalloc.c in Sources */,
+				049D9E12C5A948F1B1CB21AA /* hyphen.c in Sources */,
+				9EF3AF0491DA4972BDADAAA3 /* main.cpp in Sources */,
+				751B3624B81F4CF290633F9F /* naapplication.cpp in Sources */,
+				775D11C1315F4B498098D244 /* naclefselect.cpp in Sources */,
+				0FF79088BD4E4CBCB02312D0 /* nadoinit.cpp in Sources */,
+				27939BAF419746ECAECE2062 /* nafindreplace.cpp in Sources */,
+				B12574FC1E6D4E378F4CF82A /* naheaderwizard.cpp in Sources */,
+				376B175622D649A0934AE61B /* nahelp.cpp in Sources */,
+				18FE0B30ABCF409BADBEF458 /* nainit.cpp in Sources */,
+				DC88314ED1EB437C9B716659 /* najgabc.cpp in Sources */,
+				F88FB3B67BB24EDF972BA896 /* namdi.cpp in Sources */,
+				D0AA01D9EC044B10BF42012E /* naprog.cpp in Sources */,
+				7983EAA97D9F49B0A4B244F2 /* napsalm.cpp in Sources */,
+				38BCE574AD6C4F41B56A8B3B /* nasettings.cpp in Sources */,
+				54DD402680D944B394E885A8 /* nasyntax.cpp in Sources */,
+				4B9A10F856304E16965E292B /* mocs_compilation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1082C912655F42F4B649C3ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE479DAEEA747A28DD588AA /* notatioantiqua */;
+			targetProxy = D2F4D6699A9548B6BA0181F7 /* PBXContainerItemProxy */;
+		};
+		338DBD8277494DC394FAAAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050C49C5E12A42E59E3DF476 /* ZERO_CHECK */;
+			targetProxy = 2248D55B664D437A843C3692 /* PBXContainerItemProxy */;
+		};
+		708A3F86B04F41859156F449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050C49C5E12A42E59E3DF476 /* ZERO_CHECK */;
+			targetProxy = BBF986929E18476598B6FF44 /* PBXContainerItemProxy */;
+		};
+		7C324EF4B23B4BB9BB2D95E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAADE0113C4E4B9BAADE483A /* notatioantiqua_autogen */;
+			targetProxy = 759B216CCB37436A90B22CFE /* PBXContainerItemProxy */;
+		};
+		B0CCAE7C90F44EFAB4A73B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F428B95BF1BD4A61B86A0802 /* ALL_BUILD */;
+			targetProxy = B2BF9088978C4F5BB8E42139 /* PBXContainerItemProxy */;
+		};
+		DDD36D3177DF45688E4D5C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050C49C5E12A42E59E3DF476 /* ZERO_CHECK */;
+			targetProxy = 8683CCC2B8F9460C8FB04F34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0022F0EA374A473983FB8AFF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		02A0F935016F44E2853A5A6A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		0CB5E45DB89B493F95D28CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = notatioantiqua_autogen;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		22539B26AF4D4E9E80B4FB9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidgippner/Programmierung/Qt/notatioantiqua/Debug;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = WZFL57J7TU;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					QT_CORE_LIB,
+					QT_GUI_LIB,
+					QT_HELP_LIB,
+					QT_SQL_LIB,
+					QT_WIDGETS_LIB,
+					QT_PRINTSUPPORT_LIB,
+					QT_SVG_LIB,
+					QT_PDF_LIB,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Debug,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/.,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua.dir/Info.plist;
+				INSTALL_PATH = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				MARKETING_VERSION = 1.2;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "    $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' ";
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/opt/llvm/lib/c++",
+					"-Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++:-L/opt/homebrew/opt/llvm/lib:-L/usr/local/opt/bison/lib:/usr/local/opt/flex/lib:/usr/local/opt/sqlite/lib:",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Versions/A/QtPdf,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Versions/A/QtHelp,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Versions/A/QtSql,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets,
+					"-framework",
+					ApplicationServices,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libcups.tbd,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Versions/A/QtSvg,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Versions/A/QtGui,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Versions/A/QtCore,
+					"-framework",
+					IOKit,
+					"-framework",
+					DiskArbitration,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AppKit,
+					"-framework",
+					ImageIO,
+					"-framework",
+					Metal,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgsoftware.--PRODUCT-NAME-rfc1034identifier-";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.dgsoftware.notatioantiqua;
+				PRODUCT_NAME = notatioantiqua;
+				SECTORDER_FLAGS = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Headers,
+					"/Users/davidgippner/Qt/6.7.1/macos/mkspecs/macx-clang",
+					/Users/davidgippner/Qt/6.7.1/macos/include,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Headers,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/davidgippner/Programmierung/Qt/notatioantiqua/build/notatioantiqua.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		2BE35688F6AE488B83048E72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		49FB30D2738F4545AE7EBBA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SYMROOT = /Users/davidgippner/Programmierung/Qt/notatioantiqua/build;
+			};
+			name = Debug;
+		};
+		4E05F07FE8394F39A13BBBD9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		4EDD229C2D39409E8E635381 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidgippner/Programmierung/Qt/notatioantiqua/RelWithDebInfo;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = WZFL57J7TU;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					QT_CORE_LIB,
+					QT_NO_DEBUG,
+					QT_GUI_LIB,
+					QT_HELP_LIB,
+					QT_SQL_LIB,
+					QT_WIDGETS_LIB,
+					QT_PRINTSUPPORT_LIB,
+					QT_SVG_LIB,
+					QT_PDF_LIB,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_RelWithDebInfo,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/.,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua.dir/Info.plist;
+				INSTALL_PATH = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				MARKETING_VERSION = 1.2;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/opt/llvm/lib/c++",
+					"-Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++:-L/opt/homebrew/opt/llvm/lib:-L/usr/local/opt/bison/lib:/usr/local/opt/flex/lib:/usr/local/opt/sqlite/lib:",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Versions/A/QtPdf,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Versions/A/QtHelp,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Versions/A/QtSql,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets,
+					"-framework",
+					ApplicationServices,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libcups.tbd,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Versions/A/QtSvg,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Versions/A/QtGui,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AppKit,
+					"-framework",
+					ImageIO,
+					"-framework",
+					Metal,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Versions/A/QtCore,
+					"-framework",
+					IOKit,
+					"-framework",
+					DiskArbitration,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgsoftware.--PRODUCT-NAME-rfc1034identifier-";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.dgsoftware.notatioantiqua;
+				PRODUCT_NAME = notatioantiqua;
+				SECTORDER_FLAGS = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Headers,
+					"/Users/davidgippner/Qt/6.7.1/macos/mkspecs/macx-clang",
+					/Users/davidgippner/Qt/6.7.1/macos/include,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Headers,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/davidgippner/Programmierung/Qt/notatioantiqua/build/notatioantiqua.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		502519DD573245F4B39AE87F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidgippner/Programmierung/Qt/notatioantiqua/build;
+			};
+			name = RelWithDebInfo;
+		};
+		528BCC6C2A304E2FA83C79B3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidgippner/Programmierung/Qt/notatioantiqua/MinSizeRel;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = WZFL57J7TU;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					QT_CORE_LIB,
+					QT_NO_DEBUG,
+					QT_GUI_LIB,
+					QT_HELP_LIB,
+					QT_SQL_LIB,
+					QT_WIDGETS_LIB,
+					QT_PRINTSUPPORT_LIB,
+					QT_SVG_LIB,
+					QT_PDF_LIB,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_MinSizeRel,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/.,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua.dir/Info.plist;
+				INSTALL_PATH = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				MARKETING_VERSION = 1.2;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/opt/llvm/lib/c++",
+					"-Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++:-L/opt/homebrew/opt/llvm/lib:-L/usr/local/opt/bison/lib:/usr/local/opt/flex/lib:/usr/local/opt/sqlite/lib:",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Versions/A/QtPdf,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Versions/A/QtHelp,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Versions/A/QtSql,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets,
+					"-framework",
+					ApplicationServices,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libcups.tbd,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Versions/A/QtSvg,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Versions/A/QtGui,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Versions/A/QtCore,
+					"-framework",
+					IOKit,
+					"-framework",
+					DiskArbitration,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AppKit,
+					"-framework",
+					ImageIO,
+					"-framework",
+					Metal,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgsoftware.--PRODUCT-NAME-rfc1034identifier-";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.dgsoftware.notatioantiqua;
+				PRODUCT_NAME = notatioantiqua;
+				SECTORDER_FLAGS = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Headers,
+					"/Users/davidgippner/Qt/6.7.1/macos/mkspecs/macx-clang",
+					/Users/davidgippner/Qt/6.7.1/macos/include,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Headers,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/davidgippner/Programmierung/Qt/notatioantiqua/build/notatioantiqua.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		6BCDB1ED55764860A0A040B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/davidgippner/Programmierung/Qt/notatioantiqua/Release;
+				CURRENT_PROJECT_VERSION = 1.2;
+				DEVELOPMENT_TEAM = WZFL57J7TU;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					QT_CORE_LIB,
+					QT_NO_DEBUG,
+					QT_GUI_LIB,
+					QT_HELP_LIB,
+					QT_SQL_LIB,
+					QT_WIDGETS_LIB,
+					QT_PRINTSUPPORT_LIB,
+					QT_SVG_LIB,
+					QT_PDF_LIB,
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/notatioantiqua_autogen/include_Release,
+					/Users/davidgippner/Programmierung/Qt/notatioantiqua/.,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = /Users/davidgippner/Programmierung/Qt/notatioantiqua/CMakeFiles/notatioantiqua.dir/Info.plist;
+				INSTALL_PATH = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				MARKETING_VERSION = 1.2;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"'-std=gnu++17'",
+				);
+				OTHER_LDFLAGS = (
+					"-L/opt/homebrew/opt/llvm/lib/c++",
+					"-Wl,-rpath,/opt/homebrew/opt/llvm/lib/c++:-L/opt/homebrew/opt/llvm/lib:-L/usr/local/opt/bison/lib:/usr/local/opt/flex/lib:/usr/local/opt/sqlite/lib:",
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Versions/A/QtPdf,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Versions/A/QtHelp,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Versions/A/QtSql,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Versions/A/QtWidgets,
+					"-framework",
+					ApplicationServices,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libcups.tbd,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Versions/A/QtSvg,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Versions/A/QtGui,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Versions/A/QtCore,
+					"-framework",
+					IOKit,
+					"-framework",
+					DiskArbitration,
+					"-framework",
+					OpenGL,
+					"-framework",
+					AGL,
+					"-framework",
+					AppKit,
+					"-framework",
+					ImageIO,
+					"-framework",
+					Metal,
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dgsoftware.--PRODUCT-NAME-rfc1034identifier-";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.dgsoftware.notatioantiqua;
+				PRODUCT_NAME = notatioantiqua;
+				SECTORDER_FLAGS = "";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib,
+					"$(inherited)",
+				);
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtCore.framework/Headers,
+					"/Users/davidgippner/Qt/6.7.1/macos/mkspecs/macx-clang",
+					/Users/davidgippner/Qt/6.7.1/macos/include,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtGui.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtHelp.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSql.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtWidgets.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPrintSupport.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtSvg.framework/Headers,
+					/Users/davidgippner/Qt/6.7.1/macos/lib/QtPdf.framework/Headers,
+					"$(inherited)",
+				);
+				TARGET_TEMP_DIR = "/Users/davidgippner/Programmierung/Qt/notatioantiqua/build/notatioantiqua.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		84EC468414924CA6918DBC20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		91DA1C5FC63E4FA38B518A11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = notatioantiqua_autogen;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		B2D610F6C0AD426EBDED6731 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		B6C902DB0915492DABD0F2F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		C314B2C11FC745FC805FC02A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = notatioantiqua_autogen;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		C5E0E1B77A234AB685482C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		C8475AA37746451B8AAA75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidgippner/Programmierung/Qt/notatioantiqua/build;
+			};
+			name = Release;
+		};
+		CC4024BE647E4DDEA24A5147 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = MinSizeRel;
+		};
+		D31B2921C5BD436EA47480BD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = notatioantiqua_autogen;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+		DC9272BDE9BD407887467429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		E3FAAE914006496B95228DCA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/davidgippner/Programmierung/Qt/notatioantiqua/build;
+			};
+			name = MinSizeRel;
+		};
+		EF6F2AB5C0594279A64D0AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		FAAE2EFC5B8D4173955C3D7A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09CAE306ADDF48FF86F6C59B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C902DB0915492DABD0F2F4 /* Debug */,
+				DC9272BDE9BD407887467429 /* Release */,
+				4E05F07FE8394F39A13BBBD9 /* MinSizeRel */,
+				02A0F935016F44E2853A5A6A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E6FDE9ECB15483A9952D29C /* Build configuration list for PBXNativeTarget "notatioantiqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22539B26AF4D4E9E80B4FB9F /* Debug */,
+				6BCDB1ED55764860A0A040B4 /* Release */,
+				528BCC6C2A304E2FA83C79B3 /* MinSizeRel */,
+				4EDD229C2D39409E8E635381 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		77795A162CE44644A6E84D8C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BE35688F6AE488B83048E72 /* Debug */,
+				C5E0E1B77A234AB685482C80 /* Release */,
+				CC4024BE647E4DDEA24A5147 /* MinSizeRel */,
+				B2D610F6C0AD426EBDED6731 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BF1CFE14FD224855913CA897 /* Build configuration list for PBXAggregateTarget "notatioantiqua_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C314B2C11FC745FC805FC02A /* Debug */,
+				0CB5E45DB89B493F95D28CC7 /* Release */,
+				91DA1C5FC63E4FA38B518A11 /* MinSizeRel */,
+				D31B2921C5BD436EA47480BD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8830F3A745442D9B71D2D24 /* Build configuration list for PBXProject "notatioantiqua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FB30D2738F4545AE7EBBA6 /* Debug */,
+				C8475AA37746451B8AAA75C0 /* Release */,
+				E3FAAE914006496B95228DCA /* MinSizeRel */,
+				502519DD573245F4B39AE87F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E7EC2456D156481D971248EB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84EC468414924CA6918DBC20 /* Debug */,
+				EF6F2AB5C0594279A64D0AF7 /* Release */,
+				0022F0EA374A473983FB8AFF /* MinSizeRel */,
+				FAAE2EFC5B8D4173955C3D7A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB76E926D70C4EEE92C8835C /* Project object */;
+}

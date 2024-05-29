@@ -1,0 +1,53 @@
+.TH "naapplication" 3 "Tue Jun 12 2012" "Version 1.0.0.3164pre" "Notatio Antiqua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+naapplication \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <naapplication\&.h>\fP
+.SS "Signals"
+
+.in +1c
+.ti -1c
+.RI "void \fBfileToOpen\fP (QString &file)"
+.br
+.ti -1c
+.RI "void \fBurlToOpen\fP (QString &url)"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBnaapplication\fP (int &argc, char **argv)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual bool \fBevent\fP (QEvent *)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file naapplication\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBnaapplication::naapplication\fP (int &argc, char **argv)"
+.PP
+Definition at line 5 of file naapplication\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool \fBnaapplication::event\fP (QEvent *event)\fC [protected, virtual]\fP"
+.PP
+Definition at line 10 of file naapplication\&.cpp\&.
+.SS "void \fBnaapplication::fileToOpen\fP (QString &file)\fC [signal]\fP"
+.SS "void \fBnaapplication::urlToOpen\fP (QString &url)\fC [signal]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Notatio Antiqua from the source code\&.

@@ -1,0 +1,131 @@
+.TH "MdiChild" 3 "Tue Jun 12 2012" "Version 1.0.0.3164pre" "Notatio Antiqua" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MdiChild \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <namdi\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMdiChild\fP ()"
+.br
+.ti -1c
+.RI "void \fBnewFile\fP ()"
+.br
+.ti -1c
+.RI "bool \fBloadFile\fP (const QString &fileName)"
+.br
+.ti -1c
+.RI "bool \fBsave\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsaveAs\fP ()"
+.br
+.ti -1c
+.RI "bool \fBsaveFile\fP (const QString &fileName)"
+.br
+.ti -1c
+.RI "QString \fBuserFriendlyCurrentFile\fP ()"
+.br
+.ti -1c
+.RI "QString \fBcurrentFile\fP ()"
+.br
+.ti -1c
+.RI "bool \fBmaybeSave\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCurrentFile\fP (const QString &fileName)"
+.br
+.ti -1c
+.RI "QString \fBstrippedName\fP (const QString &fullFileName)"
+.br
+.ti -1c
+.RI "void \fBinsertFromMenuWizard\fP (const QString &value)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString \fBcurFile\fP"
+.br
+.ti -1c
+.RI "bool \fBisUntitled\fP"
+.br
+.ti -1c
+.RI "\fBHighlighter\fP * \fBhighlighter\fP"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcloseEvent\fP (QCloseEvent *event)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 58 of file namdi\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "\fBMdiChild::MdiChild\fP ()"
+.PP
+Definition at line 13 of file namdi\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void \fBMdiChild::closeEvent\fP (QCloseEvent *event)\fC [protected]\fP"
+.PP
+Definition at line 118 of file namdi\&.cpp\&.
+.SS "QString \fBMdiChild::currentFile\fP ()\fC [inline]\fP"
+.PP
+Definition at line 70 of file namdi\&.h\&.
+.SS "void \fBMdiChild::insertFromMenuWizard\fP (const QString &value)"
+.PP
+Definition at line 166 of file namdi\&.cpp\&.
+.SS "bool \fBMdiChild::loadFile\fP (const QString &fileName)"
+.PP
+Definition at line 39 of file namdi\&.cpp\&.
+.SS "bool \fBMdiChild::maybeSave\fP ()"
+.PP
+Definition at line 134 of file namdi\&.cpp\&.
+.SS "void \fBMdiChild::newFile\fP ()"
+.PP
+Definition at line 19 of file namdi\&.cpp\&.
+.SS "bool \fBMdiChild::save\fP ()"
+.PP
+Definition at line 73 of file namdi\&.cpp\&.
+.SS "bool \fBMdiChild::saveAs\fP ()"
+.PP
+Definition at line 82 of file namdi\&.cpp\&.
+.SS "bool \fBMdiChild::saveFile\fP (const QString &fileName)"
+.PP
+Definition at line 92 of file namdi\&.cpp\&.
+.SS "void \fBMdiChild::setCurrentFile\fP (const QString &fileName)"
+.PP
+Definition at line 152 of file namdi\&.cpp\&.
+.SS "QString \fBMdiChild::strippedName\fP (const QString &fullFileName)"
+.PP
+Definition at line 161 of file namdi\&.cpp\&.
+.SS "QString \fBMdiChild::userFriendlyCurrentFile\fP ()"
+.PP
+Definition at line 113 of file namdi\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QString \fBMdiChild::curFile\fP"
+.PP
+Definition at line 74 of file namdi\&.h\&.
+.SS "\fBHighlighter\fP* \fBMdiChild::highlighter\fP"
+.PP
+Definition at line 76 of file namdi\&.h\&.
+.SS "bool \fBMdiChild::isUntitled\fP"
+.PP
+Definition at line 75 of file namdi\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Notatio Antiqua from the source code\&.

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NAHelp</class>
+ <widget class="QMainWindow" name="NAHelp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Help</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/help.png</normaloff>:/images/help.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QDialogButtonBox" name="buttonBox">
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Close</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionHome"/>
+   <addaction name="actionBack"/>
+   <addaction name="actionForward"/>
+  </widget>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/user-home-symbolic.svg</normaloff>:/images/user-home-symbolic.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/arrow-left.svg</normaloff>:/images/arrow-left.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </action>
+  <action name="actionForward">
+   <property name="icon">
+    <iconset resource="naprog.qrc">
+     <normaloff>:/images/arrow-right.svg</normaloff>:/images/arrow-right.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Forward</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="naprog.qrc"/>
+ </resources>
+ <connections/>
+</ui>

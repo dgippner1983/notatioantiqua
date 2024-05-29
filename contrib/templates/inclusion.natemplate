@@ -1,0 +1,12 @@
+\newcommand{\aiintro}[2]{\gresetfirstannotation{\scriptsize #1}\gresetsecondannotation{\scriptsize #2}}
+\setgregoriofont{VAR:FONT}
+\setgrefactor{VAR:STAFFSIZE}
+\newfontfamily\initfamily{VAR:INITFONT}\def\greinitialformat#1{{\fontsize{32}{12}\selectfont\initfamily #1}}
+\newfontfamily\choralsignfont{VAR:CSFONT}%
+    \def\grehighchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}%
+    \def\grelowchoralsignstyle#1{{\tiny\selectfont\choralsignfont\itshape #1}}
+\aiintro{VAR:ANN1}{VAR:ANN2}
+\commentary{\textit{VAR:COMMENTARY}}
+\includegabcscore{VAR:FILENAME}
+User Notes:\par 
+VAR:USERNOTES
