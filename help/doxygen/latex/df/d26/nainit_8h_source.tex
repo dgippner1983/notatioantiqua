@@ -1,0 +1,42 @@
+\doxysection{nainit.\+h}
+\hypertarget{nainit_8h_source}{}\label{nainit_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ NAINIT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ NAINIT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWizard>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTextEdit>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QVariant>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QColor>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}ui\_nainit.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}nadoinit.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnainit}{nainit}};}
+\DoxyCodeLine{00012\ \}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnainit}{nainit}}\ :\ \textcolor{keyword}{public}\ QWizard}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classnainit}{nainit}}(QWidget\ *parent\ =\ 0);}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classnainit}{\string~nainit}}();}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classnadoinit}{nadoinit}}\ doinit;}
+\DoxyCodeLine{00022\ \ \ \ \ QString\ LaTeX\_Path,\ Gregorio\_Path,\ Lilypond\_Path,\ templateFolder,\ dictFolder,\ helpFolder;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ getPath(QString\ path);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_startButton\_clicked();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ getTextFromThread();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_pushButton\_clicked();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ Ui::nainit\ *ui;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NAINIT\_H}}
+
+\end{DoxyCode}

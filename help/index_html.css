@@ -1,0 +1,71 @@
+h1, h2, h3 { margin:0; padding:0; font-weight:normal; font-style:normal; }
+a { color:#5D5D9E; } 
+a:visited { color:#5D5D9E; } 
+a:active { color:#5C615E; } 
+a:hover { color:#B2B3B4; } 
+#menu_105956d6 a { text-decoration: none; }
+#menu_105956d6_pane { background-color: #E6E6E6; border: 1px solid #E6E6E6; padding-top: 10px; padding-bottom: 10px; box-shadow: 2px 2px 6px 0px rgba(8, 8, 8, 0.784314); }
+#menu_105956d6_hr { background-color: #E6E6E6; height: 1px; border: none; }
+#menu_105956d6_entry { padding-left: 10px; padding-right: 10px; padding-top: 3px; padding-bottom: 3px; }
+#menu_105956d6_entry:hover { background-color: #323232; color: #FFFFFF !important; }
+#menu_105956d6_entry:hover span { color:#FFFFFF !important; }
+		.menu_105956d6_mainMenuEntry { text-align: center; }
+		.menu_105956d6_mainMenuEntry:hover {	background-color:#282828; }
+		.menu_105956d6_mainMenuEntry:hover span {	color:#FFFFFF !important; }
+		#menu_105956d6 .mobileEntry { display: none; } 
+		#menu_105956d6 .normalEntry { display: block; } 
+		@media only screen and (max-width:550px) { 
+			#menu_105956d6 .mobileEntry { display: block; } 
+			#menu_105956d6 .normalEntry { display: none; } 
+		}
+body { background-color:#FEFEDF; padding:0;  margin: 0; }
+.textstyle1 { text-align:left; }
+#container_55a9f057 { box-sizing: border-box; vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; min-height:150px; background-color:#113F93; background: linear-gradient(to bottom, #0096DB, #113F93); border: 1px solid #545454; box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.588235);  }
+#container_55a9f057_padding { margin: 10px; display: block;  }
+#img_8b63d45 { position:absolute; left:1%; top:1%; width:37%; max-width:128px; background:none; height:auto;  }
+#text_61bd2509 { position:absolute; left:13%; top:32%; width:1280px; height:52px; background:none;  }
+#text_61bd2509_padding { margin: 10px 0px 0px 0px;display: block;  }
+.textstyle2 { font-size:22pt; font-family:Ubuntu, sans-serif; color:#FFFFFF;  }
+#menu_105956d6 { box-sizing: border-box; position:absolute; left:11%; top:68%; width:90%; height:33px; text-align:left; background-color:#113F96; background: linear-gradient(to bottom, #0096DC, #113F96); border: 1px dotted #A0A0A0;  }
+.menuholder1 { position: relative; overflow: hidden; width: 100%; height: 100%; }
+.menustyle1 { position:absolute; width:36px; height:33px; left:10px;  }
+.menuentry_text1 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin-top:auto; margin-bottom:auto; margin-left:auto; margin-right:auto; height:32px;  }
+.textstyle3 { font-size:22pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  white-space: nowrap; }
+.menustyle2 { position:absolute; width:61px; height:33px; left:10px;  }
+.menuentry_text2 { position:absolute; top:0px; bottom:0px; left:0px; right:0px; margin-top:auto; margin-bottom:auto; margin-left:auto; margin-right:auto; height:17px;  }
+.textstyle4 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#FFFFFF;  white-space: nowrap; }
+.menustyle3 { position:absolute; width:79px; height:33px; left:71px;  }
+.menustyle4 { position:absolute; width:80px; height:33px; left:150px;  }
+.menustyle5 { position:absolute; width:77px; height:33px; left:230px;  }
+.menustyle6 { position:absolute; width:105px; height:33px; left:307px;  }
+.menustyle7 { position:absolute; width:62px; height:33px; left:412px;  }
+.textstyle5 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#545454;  white-space: nowrap; }
+#placeh_7b158426 { vertical-align: bottom; position:relative; display: inline-block; margin:10px; width:100%; min-height:584px;  }
+#container_19da6ef5 { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
+#container_19da6ef5_padding { margin: 10px; display: block;  }
+#heading_5ad1743c { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Ubuntu, sans-serif; color:#000000; text-align:left;  }
+.textstyle6 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#000000;  }
+.textstyle7 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#000000; font-weight:bold;  }
+.textstyle8 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#000000; font-style:italic;  }
+#container_74cc30ce { vertical-align: top; position:relative; display: inline-block; width:100%; min-height:150px; background:none;  }
+#container_74cc30ce_padding { margin: 10px; display: block;  }
+#container_594abb12 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
+#container_594abb12_padding { margin: 10px; display: block;  }
+#heading_69fcba52 { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Ubuntu, sans-serif; color:#000000; text-align:left;  }
+#container_3d782f09 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
+#container_3d782f09_padding { margin: 10px; display: block;  }
+#heading_10377463 { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Ubuntu, sans-serif; color:#000000; text-align:left;  }
+#container_60dba8b2 { vertical-align: top; position:relative; display: inline-block; width:33%; min-height:150px; background:none;  }
+#container_60dba8b2_padding { margin: 10px; display: block;  }
+#heading_48ef720e { vertical-align: bottom; position:relative; display: inline-block; background:none; font-size:24pt; font-family:Ubuntu, sans-serif; color:#000000; text-align:left;  }
+.textstyle9 { font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:#000000;  }
+#container_18a61349 { box-sizing: border-box; vertical-align: top; border-radius: 9px; position:relative; display: inline-block; width:100%; min-height:41px; background-color:#0096DC; background: linear-gradient(to bottom, #113F93, #0096DC); border: 1px solid #545454;  }
+#container_18a61349_padding { margin: 10px; display: block;  }
+#text_7e4f3457 { position:absolute; left:1%; top:17%; width:380px; height:28px; background:none;  }
+.textstyle10 { font-size:12pt; font-family:Ubuntu, sans-serif; color:#FFFFFF;  }
+@media only screen and (max-width: 600px)
+{
+		#container_594abb12 { width:100%;  }
+		#container_3d782f09 { width:100%;  }
+		#container_60dba8b2 { width:100%;  }
+}
