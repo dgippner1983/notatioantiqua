@@ -1,3 +1,15 @@
+/*-----------------------------------------------------------------------------
+|  This file is part of Notatio Antiqua (c) 2009-2024 David Gippner           |
+-------------------------------------------------------------------------------
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software Foundation;
+version 3 of the License.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+-----------------------------------------------------------------------------*/
 #ifndef NAPSALM_H
 #define NAPSALM_H
 
@@ -16,6 +28,10 @@ class napsalm;
 }
 
 class napsalm : public QFrame
+/**
+     * @class napsalm
+     * @brief Class for holding the information on psalm tone models
+     */
 {
     Q_OBJECT
     

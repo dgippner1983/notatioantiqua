@@ -6,12 +6,12 @@ color: white;
 QTabBar::tab {
 background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
 stop: 0 #113f93, stop: 1 #0096db);
-color: black;
+color: lightGray;
 padding: 6px; }
 QTabWidget::pane {
 border: 0;
 }
-QDockWidget::title {
+QDockWidget::title { /* headings of dock widgets */
 background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
 stop: 0 #113f93, stop: 1 #0096db);
 color: white !important;
@@ -21,11 +21,11 @@ QDockWidget {
 background-color: rgb(255, 255, 255);
 color: black;
 }
-QToolButton:pressed { /* all types of tool button */
+QToolButton { /* all types of tool button */
     border: 2px solid #8f8f91;
     border-radius: 6px;
     padding: 3px;
-    color: black;
+    color: white;
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                       stop: 0 #0096db, stop: 1 #113f93);
 }
@@ -34,9 +34,9 @@ QToolButton[popupMode="1"] { /* only for MenuButtonPopup */
     padding-right: 20px; /* make way for the popup button */
 }
 
-QToolButton {
+QToolButton:pressed {
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
                                       stop: 0 #113f93, stop: 1 #0096DB);
-    color: black;
+    color: white;
     padding: 6px;
 }

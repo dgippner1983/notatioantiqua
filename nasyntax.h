@@ -24,6 +24,10 @@ QT_END_NAMESPACE
 
 //! [0]
 class Highlighter : public QSyntaxHighlighter
+/**
+     * @class Highlighter
+     * @brief Syntax highlighter with specialities of gabc, nabc and lilypond
+     */
 {
     Q_OBJECT
 

@@ -15,6 +15,7 @@ See the GNU General Public License for more details.
  *
  * Notatio Antiqua is an Open Source GUI for creating PDFs with gregorio and LuaLaTeX
  * at the moment it is in beta testing phase, not everything will function as expected
+ * It is based on Qt 6.7 Framework with C++
  *
  */
 #ifndef NAPROG_H
