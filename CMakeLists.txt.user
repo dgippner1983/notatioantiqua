@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 13.0.1, 2024-05-29T22:13:28. -->
+<!-- Written by QtCreator 13.0.1, 2024-06-03T14:25:14. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -94,7 +94,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Qt6</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Qt6</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{2e2d47b9-5d97-431b-9d2b-dd3f789cba31}</value>
-   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">4</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -409,7 +409,6 @@
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/davidgippner/Programmierung/Qt/notatioantiqua/build/Qt6-MinSizeRel/notatioantiqua.app/Contents/MacOS</value>
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
