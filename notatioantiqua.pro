@@ -58,3 +58,6 @@ SOURCES += hnjalloc.c \
            nasyntax.cpp
 RESOURCES += i18n.qrc naprog.qrc
 TRANSLATIONS += NaProg-de.ts NaProg-en.ts NaProg-fr.ts
+
+DISTFILES += \
+    notantiq.css

@@ -3,9 +3,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QDockWidget>
-#include <QtHelp/QHelpContentWidget>
-#include <QtHelp/QHelpEngine>
-#include <QtHelp/QHelpEngineCore>
+#include <QtHelp>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QSplitter>
 #include <QSettings>

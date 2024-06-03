@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
             }
         }
     }
-    QFont appfont("Ubuntu", 12); // application general font
+    QFont appfont("Ubuntu"); // application general font
     QFile nastyle(":/notantiq.css"); // get included styles from central stylesheet
     nastyle.open(QFile::ReadOnly);
     QString nastyle_content (nastyle.readAll());

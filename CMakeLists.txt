@@ -145,6 +145,8 @@ set(naprog_resource_files
     "notantiq.css"
     "notantiq.icns"
     "notantiq.ico"
+    "help/masterpage_html.css"
+    "help/nahelp.css"
 )
 
 qt_add_resources(notatioantiqua "naprog"

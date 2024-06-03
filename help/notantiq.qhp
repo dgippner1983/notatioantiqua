@@ -10,19 +10,27 @@
         <filterAttribute>Notatio Antiqua</filterAttribute>
         <filterAttribute>1.2</filterAttribute>
         <toc>
-            <section title="Notatio Antiqua Manual" ref="index.html">
-                <section title="Program Help" ref="gui.html"/>
-                <section title="Gregorio Help" ref="gregorio-quick.html"/>
-                <section title="Licenses" ref="gpl3.html"/>
-                <section title="Source Code" ref="doxygen/html/index.html"/>
-                <section title="About" ref="about.html"/>
+            <section title="Manual Home" ref="index.html"/>
+            <section title="Program Help">
+				<section title="GUI" ref="gui.html"/>
+				<section title="Initialization" ref="init.html"/>
+				<section title="Wizards" ref="wizards.html"/>
+				<section title="Templates" ref="templates.html"/>
+				<section title="Compiling and Viewing" ref="compiling.html"/>
+			</section>
+            <section title="Gregorio Help">
+				<section title="Quick reference" ref="gregorio-quick.html"/>
+				<section title="Full documentation" ref="gregorio-full.html"/>
+			</section>
+            <section title="Licenses">
+		   		<section title="GNU General Public License v3" ref="gpl3.html"/>
+		   		<section title="GNU Lesser General Public License v3" ref="lgpl3.html"/>
+		   		<section title="GNU Free Documentation License v1.3" ref="gfdl.html"/>
+		   		<section title="Ubuntu Font License v1" ref="ufl.html"/>	
             </section>
+			<section title="Source Code" ref="doxygen/html/index.html"/>
+            <section title="About" ref="about.html"/>
         </toc>
-        <keywords>
-            <keyword name="foo" id="MyApplication::foo" ref="doc.html#foo"/>
-            <keyword name="bar" ref="doc.html#bar"/>
-            <keyword id="MyApplication::foobar" ref="doc.html#foobar"/>
-        </keywords>
         <files>
             <file>*.css</file>
             <file>*.html</file>

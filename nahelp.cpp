@@ -19,6 +19,13 @@ NAHelp::~NAHelp()
 void NAHelp::createWidgets()
 {
     QString help_file;
+    QFile help_stylesheet(":/help/nahelp.css");
+    if (!help_stylesheet.open(QFile::ReadOnly | QFile::Text)) {
+        QMessageBox::warning(this, tr("Notatio Antiqua"),
+                             tr("Can't read style sheet:\n%1.")
+                                 .arg(help_stylesheet.errorString()));
+        }
+    QTextStream help_stylesheet_contents(&help_stylesheet);
     QSettings* preferences = new QSettings(QSettings::IniFormat,QSettings::UserScope,"DGSOFTWARE", "Notatio Antiqua");
     preferences->beginGroup("Paths");
     QString helpFolder = preferences->value("helpFolder").toString();
@@ -27,45 +34,11 @@ void NAHelp::createWidgets()
     QHelpEngine *helpEngine = new QHelpEngine(help_file,this);
     helpEngine->setupData();
     QHelpBrowser *helpBrowser = new QHelpBrowser(help_file,this);
+    helpBrowser->setOpenExternalLinks(true);
     helpBrowser->setSource(QUrl("qthelp://com.dgsoftware.notatioantiqua.12/doc/index.html"));
     helpBrowser->createStandardContextMenu();
-    helpBrowser->document()->setDefaultStyleSheet("h1 { "
-                                                  "color: #003333;"
-                                                  "font-size: 160%;"
-                                                  "font-weight: bold;"
-                                                  "}"
-                                                  "h2 {"
-                                                  "color: #000066;"
-                                                  "font-size: 140%;"
-                                                  "font-weight: bold;"
-                                                  "}"
-                                                  "h3 {"
-                                                  "color: #003366;"
-                                                  "font-size: 120%"
-                                                  "font-weight: bold;"
-                                                  "}"
-                                                  "p {"
-                                                  "align: justified;"
-                                                  "}"
-                                                  "body {"
-                                                  "background-color: #fff;"
-                                                  "width: 1050px;"
-                                                  "}"
-                                                  "#copy {"
-                                                  "background-color: #663366;"
-                                                  "color: #fff;"
-                                                  "}"
-                                                  "a {"
-                                                  "color: #006600;"
-                                                  "font-weight: bold;"
-                                                  "text-decoration: none;"
-                                                  "}"
-                                                  "#header {"
-                                                  "background: url('qrc:/images/notantiq.jpg') no-repeat;"
-                                                  "height: 150px;"
-                                                  "width: 100%;"
-                                                  "padding: 0 0;"
-                                                  "}");
+    helpBrowser->document()->setLayoutEnabled(1);
+    helpBrowser->document()->setDefaultStyleSheet(help_stylesheet_contents.readAll());
     QSplitter *helpPanel = new QSplitter(Qt::Horizontal);
     helpPanel->insertWidget(0, helpEngine->contentWidget());
     helpPanel->insertWidget(1, helpBrowser);
@@ -83,25 +56,27 @@ QHelpBrowser::QHelpBrowser(QString collectionFile, QWidget *parent)
      m_helpEngine = new QHelpEngineCore(collectionFile, this);
      if (!m_helpEngine->setupData()) {
          delete m_helpEngine;
-         m_helpEngine = 0;
+         m_helpEngine = nullptr;
      }
  }
 QVariant QHelpBrowser::loadResource(int type, const QUrl &name)
 {
     QByteArray ba;
-         if (type < 4 && m_helpEngine) {
-             QUrl url(name);
-             if (name.isRelative())
-                 url = source().resolved(url);
-             ba = m_helpEngine->fileData(url);
-         }
+    if (type < 4 && m_helpEngine) {
+        QUrl url(name);
+        if (name.isRelative())
+            url = source().resolved(url);
+        ba = m_helpEngine->fileData(url);
+    }
     return ba;
 }
 void QHelpBrowser::showHelpForKeyword(const QString &id)
  {
      if (m_helpEngine) {
-       /* QMap<QString, QUrl> links = m_helpEngine->documentsForIdentifier(id);
-       if (links.count())
-       setSource(links.constBegin().value()); */
+         QList<QHelpLink> links = m_helpEngine->documentsForIdentifier(id);
+         {
+             if (links.count())
+                 setSource(links.first().url);
+         }
      }
  }
