@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Notatio Antiqua</DisplayName>
+    <Description>Install main application</Description>
+    <DisplayName>Templates</DisplayName>
+    <Description>Templates for PDF creation</Description>
+    <DisplayName>Help</DisplayName>
+    <Description>Notatio Antiqua Help</Description>
+    <DisplayName>Dictionaries</DisplayName>
+    <Description>Dictionaries for hyphenation</Description>
+    <Version>1.2.1</Version>
+    <ReleaseDate>2024-06-06</ReleaseDate>
+    <Licenses>
+        <License name="GNU General Public License" file="gpl3.txt" />
+    </Licenses>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+    <UserInterfaces>
+        <UserInterface>page.ui</UserInterface>
+    </UserInterfaces>
+</Package>

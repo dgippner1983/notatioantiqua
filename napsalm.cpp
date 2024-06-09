@@ -165,6 +165,12 @@ void napsalm::on_generateButton_clicked()
             QString punctuation;
             QString lword = words.at(it).trimmed();
             QString out_word;
+            static QRegularExpression dot("^\\w*(\\.)$");
+            static QRegularExpression comma("^\\w*(\\,)$");
+            static QRegularExpression colon("^\\w*(\\:)$");
+            static QRegularExpression semicolon("^\\w*(\\;)$");
+            static QRegularExpression excl_mark("^\\w*(\\!)$");
+            static QRegularExpression question_mark("^\\w*(\\?)$");
             int length = words.at(it).length();
             char *hyphens = new char[BUFSIZE+1];
             char *hyphword = new char[BUFSIZE * 2];
@@ -174,38 +180,40 @@ void napsalm::on_generateButton_clicked()
             rep = NULL;
             pos = NULL;
             cut = NULL;
-            const char *dictionary = QString(dictFolder+"/hyph_de_DE.dic").toStdString().c_str();
+            std::string dictionaryS = QString(dictFolder+"/hyph_de_DE.dic").toStdString();
+            const char *dictionary = dictionaryS.c_str();
             if ((dict = hnj_hyphen_load(dictionary)) == NULL) {
                 QMessageBox::critical(this,tr("Notatio Antiqua"),
                                       tr("We couldn't load required dictionary file."),QMessageBox::Ok,QMessageBox::NoButton);
                 return;
             }
-            if (lword.contains(QRegularExpression("^\\w*(\\.)$"))) {
+            if (lword.contains(dot)) {
                 punctuation = ".";
                 lword.remove(".",Qt::CaseInsensitive);
             }
-            if (lword.contains(QRegularExpression("^\\w*\\:$"))) {
+            if (lword.contains(colon)) {
                 punctuation = ":";
                 lword.remove(":",Qt::CaseInsensitive);
             }
-            if (lword.contains(QRegularExpression("^\\w*\\,$"))) {
+            if (lword.contains(comma)) {
                 punctuation = ",";
                 lword.remove(",",Qt::CaseInsensitive);
             }
-            if (lword.contains(QRegularExpression("^\\w*\\;$"))) {
+            if (lword.contains(semicolon)) {
                 punctuation = ";";
                 lword.remove(";",Qt::CaseInsensitive);
             }
-            if (lword.contains(QRegularExpression("^\\w*\\!$"))) {
+            if (lword.contains(excl_mark)) {
                 punctuation = "!";
                 lword.remove("!",Qt::CaseInsensitive);
             }
-            if (lword.contains(QRegularExpression("^\\w*\\?$"))) {
+            if (lword.contains(question_mark)) {
                 punctuation = "?";
                 lword.remove("?",Qt::CaseInsensitive);
             }
             lword = lword.trimmed();
-            const char *word = lword.toStdString().c_str();
+            std::string std_lword = lword.toStdString();
+            const char *word = std_lword.c_str();
             if (hnj_hyphen_hyphenate3(dict,word,length,hyphens,hyphword,&rep,&pos,&cut,2,2,2,2)) {
                 errors << tr("Error hyphenating %1").arg(QString(word));
                 return;

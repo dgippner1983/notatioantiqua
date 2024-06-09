@@ -197,8 +197,8 @@ private:
     QToolBar *naribbonBar;
     QTabWidget *naribbons;
     QLabel *processText, *templateText;
-    QGroupBox *fileBox, *editBox, *insertBox, *runBox, *prefsBox, *helpBox, *windowBox;
-    QHBoxLayout *fileLayout, *editLayout, *insertLayout, *runLayout, *prefsLayout, *helpLayout, *windowLayout;
+    QGroupBox *fileBox, *editBox, *findReplaceBox, *insertBox, *runBox, *prefsBox, *helpBox, *windowBox;
+    QHBoxLayout *fileLayout, *editLayout, *findReplaceLayout, *insertLayout, *runLayout, *prefsLayout, *helpLayout, *windowLayout;
     QToolBar *fileToolBar, *editToolBar, *insertToolBar, *runToolBar, *prefsToolBar, *helpToolBar, *windowToolBar;
     QCheckBox *pdfBox;
     QComboBox *templateBox;

@@ -425,12 +425,23 @@ p, li { white-space: pre-wrap; }
         <translation>Suivant</translation>
     </message>
     <message>
-        <location filename="nahelp.cpp" line="26"/>
+        <location filename="nahelp.cpp" line="24"/>
+        <source>Notatio Antiqua</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nahelp.cpp" line="25"/>
+        <source>Can&apos;t read style sheet:
+%1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="nahelp.cpp" line="33"/>
         <source>/notantiq.qhc</source>
         <translation>/notantiq-fr.qhc</translation>
     </message>
     <message>
-        <location filename="nahelp.cpp" line="72"/>
+        <location filename="nahelp.cpp" line="45"/>
         <source>Contents</source>
         <translation>Contenu</translation>
     </message>
@@ -679,10 +690,10 @@ p, li { white-space: pre-wrap; }
         <location filename="naprog.ui" line="245"/>
         <location filename="naprog.ui" line="294"/>
         <location filename="naprog.ui" line="297"/>
-        <location filename="naprog.cpp" line="1325"/>
-        <location filename="naprog.cpp" line="1328"/>
+        <location filename="naprog.cpp" line="1335"/>
+        <location filename="naprog.cpp" line="1338"/>
         <source>Help</source>
-        <translation type="unfinished">Aide</translation>
+        <translation>Aide</translation>
     </message>
     <message>
         <location filename="naprog.ui" line="255"/>
@@ -691,7 +702,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="naprog.ui" line="266"/>
-        <location filename="naprog.cpp" line="1300"/>
+        <location filename="naprog.cpp" line="1310"/>
         <source>Process</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1173,7 +1184,7 @@ Do you really want to revert it to the last saved state?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1270"/>
+        <location filename="naprog.cpp" line="1280"/>
         <source>View PDF after creation</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1247,93 +1258,104 @@ Do you really want to revert it to the last saved state?</source>
         <translation>Fichier</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1220"/>
+        <location filename="naprog.cpp" line="1216"/>
         <source>Edit file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1221"/>
+        <location filename="naprog.cpp" line="1217"/>
         <source>Cut, Copy, Paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1223"/>
+        <location filename="naprog.cpp" line="1219"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1256"/>
+        <location filename="naprog.cpp" line="1229"/>
+        <location filename="naprog.cpp" line="1232"/>
+        <source>Find and Replace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.cpp" line="1230"/>
+        <source>Find and replace text</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="naprog.cpp" line="1266"/>
         <source>Inserting Divisions, Symbols, Choral Signs - Assistants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1257"/>
+        <location filename="naprog.cpp" line="1267"/>
         <source>Insert bars, divisions, symbols and choral signs or use an assistant.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1259"/>
+        <location filename="naprog.cpp" line="1269"/>
         <source>Insert / Assistants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1273"/>
+        <location filename="naprog.cpp" line="1283"/>
         <source>Process file with template</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1274"/>
+        <location filename="naprog.cpp" line="1284"/>
         <source>GABC→PDF</source>
         <translation>GABC→PDF</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1278"/>
+        <location filename="naprog.cpp" line="1288"/>
         <source>LyTeX→PDF</source>
         <translation>LyTeX→PDF</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1282"/>
+        <location filename="naprog.cpp" line="1292"/>
         <source>Aufräumen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1297"/>
+        <location filename="naprog.cpp" line="1307"/>
         <source>Process with options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1298"/>
+        <location filename="naprog.cpp" line="1308"/>
         <source>Set processing options and generate PDF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1311"/>
+        <location filename="naprog.cpp" line="1321"/>
         <source>Settings and Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1312"/>
+        <location filename="naprog.cpp" line="1322"/>
         <source>Set preferences for the editor, set program options, configure Notatio Antiqua</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1314"/>
+        <location filename="naprog.cpp" line="1324"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1326"/>
+        <location filename="naprog.cpp" line="1336"/>
         <source>Help and information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1345"/>
-        <location filename="naprog.cpp" line="1348"/>
+        <location filename="naprog.cpp" line="1355"/>
+        <location filename="naprog.cpp" line="1358"/>
         <source>Windows</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="naprog.cpp" line="1346"/>
+        <location filename="naprog.cpp" line="1356"/>
         <source>Change window size and behaviour</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1967,17 +1989,17 @@ Help Folder: %6</source>
     <message>
         <location filename="napsalm.cpp" line="152"/>
         <location filename="napsalm.cpp" line="154"/>
-        <location filename="napsalm.cpp" line="179"/>
+        <location filename="napsalm.cpp" line="186"/>
         <source>Notatio Antiqua</source>
         <translation>Quitter Notatio Antiqua</translation>
     </message>
     <message>
-        <location filename="napsalm.cpp" line="180"/>
+        <location filename="napsalm.cpp" line="187"/>
         <source>We couldn&apos;t load required dictionary file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="napsalm.cpp" line="210"/>
+        <location filename="napsalm.cpp" line="218"/>
         <source>Error hyphenating %1</source>
         <translation type="unfinished"></translation>
     </message>

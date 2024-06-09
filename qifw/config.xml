@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Notatio Antiqua</Name>
+    <Version>1.2.1</Version>
+    <Title>Notatio Antiqua Installer</Title>
+    <Publisher>DGSOFTWARE</Publisher>
+    <StartMenuDir>Notatio Antiqua</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/notatioantiqua</TargetDir>
+</Installer>

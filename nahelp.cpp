@@ -34,7 +34,6 @@ void NAHelp::createWidgets()
     QHelpEngine *helpEngine = new QHelpEngine(help_file,this);
     helpEngine->setupData();
     QHelpBrowser *helpBrowser = new QHelpBrowser(help_file,this);
-    helpBrowser->setOpenExternalLinks(true);
     helpBrowser->setSource(QUrl("qthelp://com.dgsoftware.notatioantiqua.12/doc/index.html"));
     helpBrowser->createStandardContextMenu();
     helpBrowser->document()->setLayoutEnabled(1);

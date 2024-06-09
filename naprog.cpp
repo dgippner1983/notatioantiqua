@@ -1173,7 +1173,7 @@ void NaProg::createRibbonBar()
     // ribbon-style menu on top
     naribbonBar = new QToolBar;
     naribbons = new QTabWidget;
-    naribbonBar->setFont(QFont("Ubuntu",12));
+    naribbonBar->setFont(QFont("Ubuntu",10));
     naribbonBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
 
     // File ribbon
@@ -1202,9 +1202,6 @@ void NaProg::createRibbonBar()
 
     // Edit ribbon
     editBox = new QGroupBox;
-    nafindreplace* nf = new nafindreplace;
-    connect(nf,SIGNAL(findText(QString,bool,bool,bool)),this,SLOT(documentFind(QString,bool,bool,bool)));
-    connect(nf,SIGNAL(replaceText(QString,QString,bool,bool,bool,bool)),this,SLOT(documentReplace(QString,QString,bool,bool,bool,bool)));
     editToolBar = new QToolBar;
     editToolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     editToolBar->addAction(ui->actionKopieren);
@@ -1215,16 +1212,29 @@ void NaProg::createRibbonBar()
     editToolBar->addAction(ui->actionUndo);
     editLayout = new QHBoxLayout;
     editLayout->addWidget(editToolBar);
-    editLayout->addWidget(nf);
     editBox->setLayout(editLayout);
     editBox->setTitle(tr("Edit file"));
     editBox->setToolTip(tr("Cut, Copy, Paste"));
     editBox->setStatusTip(editBox->toolTip());
     naribbons->insertTab(2,editBox,QIcon(":/images/edit-symbolic.svg.png"),tr("Edit"));
 
+    // Find and Replace ribbon
+    nafindreplace* nf = new nafindreplace;
+    connect(nf,SIGNAL(findText(QString,bool,bool,bool)),this,SLOT(documentFind(QString,bool,bool,bool)));
+    connect(nf,SIGNAL(replaceText(QString,QString,bool,bool,bool,bool)),this,SLOT(documentReplace(QString,QString,bool,bool,bool,bool)));
+    findReplaceBox = new QGroupBox;
+    findReplaceLayout = new QHBoxLayout;
+    findReplaceLayout->addWidget(nf);
+    findReplaceBox->setLayout(findReplaceLayout);
+    findReplaceBox->setTitle(tr("Find and Replace"));
+    findReplaceBox->setToolTip(tr("Find and replace text"));
+    findReplaceBox->setStatusTip(findReplaceBox->toolTip());
+    naribbons->insertTab(3,findReplaceBox,QIcon(":/images/edit-find-replace-symbolic.svg.png"),tr("Find and Replace"));
+
     // insert ribbon
     insertBox = new QGroupBox;
     insertToolBar = new QToolBar;
+    insertToolBar->setIconSize(QSize(16,16));
     insertToolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
     insertToolBar->addAction(ui->actionVirgula);
     insertToolBar->addAction(ui->actionQuarter_Bar);
@@ -1256,7 +1266,7 @@ void NaProg::createRibbonBar()
     insertBox->setTitle(tr("Inserting Divisions, Symbols, Choral Signs - Assistants"));
     insertBox->setToolTip(tr("Insert bars, divisions, symbols and choral signs or use an assistant."));
     insertBox->setStatusTip(insertBox->toolTip());
-    naribbons->insertTab(3,insertBox,QIcon(":/images/edit-paste-symbolic.svg.png"),tr("Insert / Assistants"));
+    naribbons->insertTab(4,insertBox,QIcon(":/images/edit-paste-symbolic.svg.png"),tr("Insert / Assistants"));
 
     // processing ribbon
     runBox = new QGroupBox;
@@ -1297,7 +1307,7 @@ void NaProg::createRibbonBar()
     runBox->setTitle(tr("Process with options"));
     runBox->setToolTip(tr("Set processing options and generate PDF"));
     runBox->setStatusTip(runBox->toolTip());
-    naribbons->insertTab(4,runBox,QIcon(":/images/document-send-symbolic.svg.png"),tr("Process"));
+    naribbons->insertTab(5,runBox,QIcon(":/images/document-send-symbolic.svg.png"),tr("Process"));
 
     // settings ribbon
     prefsBox = new QGroupBox;
@@ -1311,7 +1321,7 @@ void NaProg::createRibbonBar()
     prefsBox->setTitle(tr("Settings and Configuration"));
     prefsBox->setToolTip(tr("Set preferences for the editor, set program options, configure Notatio Antiqua"));
     prefsBox->setStatusTip(prefsBox->toolTip());
-    naribbons->insertTab(5,prefsBox,QIcon(":/images/preferences-system-symbolic.svg.png"),tr("Settings"));
+    naribbons->insertTab(6,prefsBox,QIcon(":/images/preferences-system-symbolic.svg.png"),tr("Settings"));
 
     // help ribbon
     helpBox = new QGroupBox;
@@ -1325,7 +1335,7 @@ void NaProg::createRibbonBar()
     helpBox->setTitle(tr("Help"));
     helpBox->setToolTip(tr("Help and information"));
     helpBox->setStatusTip(helpBox->toolTip());
-    naribbons->insertTab(6,helpBox,QIcon(":/images/help-about.svg"),tr("Help"));
+    naribbons->insertTab(7,helpBox,QIcon(":/images/help-about.svg"),tr("Help"));
 
     // window ribbon
     windowBox = new QGroupBox;
@@ -1345,7 +1355,7 @@ void NaProg::createRibbonBar()
     windowBox->setTitle(tr("Windows"));
     windowBox->setToolTip(tr("Change window size and behaviour"));
     windowBox->setStatusTip(windowBox->toolTip());
-    naribbons->insertTab(7,windowBox,QIcon(":/images/window-maximize.svg"),tr("Windows"));
+    naribbons->insertTab(8,windowBox,QIcon(":/images/window-maximize.svg"),tr("Windows"));
 
     // putting everything together and do some styling
     naribbons->setDocumentMode(1); // for ribbonlike style
@@ -1355,9 +1365,9 @@ void NaProg::createRibbonBar()
 }
 void NaProg::gabcP()
 {
-    processFile(1);
+    processFile(1); // void NaProg::processFile(bool isGabc) true
 }
 void NaProg::lytexP()
 {
-    processFile(0);
+    processFile(0); // void NaProg::processFile(bool isGabc) false
 }
